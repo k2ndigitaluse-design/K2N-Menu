@@ -24,9 +24,10 @@ dist-ssr
 *.sw?
 
 # Mockup design assets in root
-Grid_View.png
-Individual_View.png
-List_View.png
-Logo.png
-Logo_br_removed.png
-Candidate*.png
+/Grid_View.png
+/Individual_View.png
+/List_View.png
+/Logo.png
+/Logo_br_removed.png
+/Candidate*.png
+/Screenshot*.png
