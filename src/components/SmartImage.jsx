@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { cloudinaryUrl } from "../utils/cloudinary.js";
 
 export function SmartImage({
   src,
@@ -6,10 +7,14 @@ export function SmartImage({
   className = "",
   style = {},
   aspectRatio,
-  objectFit = "cover"
+  objectFit = "cover",
+  targetWidth = 600
 }) {
   const [loaded, setLoaded] = useState(false);
   const [hasError, setHasError] = useState(false);
+
+  const optimizedSrc = src ? cloudinaryUrl(src, targetWidth) : "";
+  const showPlaceholder = !optimizedSrc || hasError;
 
   return (
     <div
@@ -20,11 +25,12 @@ export function SmartImage({
         width: "100%",
         height: "100%",
         aspectRatio: aspectRatio,
+        backgroundColor: "#FAF6EF",
         ...style
       }}
     >
-      {/* Shimmer Placeholder */}
-      {!loaded && !hasError && (
+      {/* Shimmer Placeholder while loading real image */}
+      {!showPlaceholder && !loaded && (
         <div
           className="shimmer"
           style={{
@@ -37,9 +43,9 @@ export function SmartImage({
       )}
 
       {/* Main Image */}
-      {!hasError ? (
+      {!showPlaceholder ? (
         <img
-          src={src}
+          src={optimizedSrc}
           alt={alt}
           loading="lazy"
           onLoad={() => setLoaded(true)}
@@ -53,25 +59,49 @@ export function SmartImage({
             objectFit: objectFit,
             display: "block",
             opacity: loaded ? 1 : 0,
-            transition: "opacity 0.35s ease-in-out"
+            transition: "opacity 0.3s ease-in-out"
           }}
         />
       ) : (
-        /* Fallback Graphic */
+        /* Branded Placeholder (Warm cream background with K2N logo) */
         <div
           style={{
             width: "100%",
             height: "100%",
             display: "flex",
+            flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            background: "linear-gradient(135deg, #F3EDE2 0%, #E6DBC9 100%)",
-            color: "var(--muted)",
-            fontSize: "12px",
-            fontWeight: 500
+            background: "linear-gradient(135deg, #FAF6EF 0%, #EDE4D3 100%)",
+            padding: "8px",
+            border: "1px solid rgba(172, 132, 75, 0.15)",
+            boxSizing: "border-box"
           }}
         >
-          <span>{alt || "K2N Dish"}</span>
+          <img
+            src="/assets/logo.png"
+            alt="K2N"
+            style={{
+              maxHeight: "45%",
+              maxWidth: "65%",
+              objectFit: "contain",
+              opacity: 0.85,
+              filter: "drop-shadow(0 2px 4px rgba(172, 132, 75, 0.2))"
+            }}
+          />
+          <span
+            style={{
+              fontSize: "10px",
+              fontFamily: "var(--font-heading)",
+              color: "var(--gold-start)",
+              fontWeight: 700,
+              letterSpacing: "1.5px",
+              marginTop: "4px",
+              textTransform: "uppercase"
+            }}
+          >
+            K2N HOTELS
+          </span>
         </div>
       )}
     </div>

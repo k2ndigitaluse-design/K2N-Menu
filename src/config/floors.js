@@ -10,7 +10,7 @@ export const floors = {
     id: "top",
     slug: "top",
     name: "Top Floor",
-    allowedTypes: ["veg", "nonveg", "alcohol"]
+    allowedTypes: ["veg", "nonveg", "bar"]
   }
 };
 

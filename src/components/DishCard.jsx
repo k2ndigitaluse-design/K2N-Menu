@@ -5,7 +5,7 @@ export function DishCard({ dish, isActive, currency = "₹" }) {
   if (!dish) return null;
 
   const isVeg = dish.type === "veg";
-  const isAlcohol = dish.type === "alcohol";
+  const isBar = dish.type === "bar";
   const displayPrice = dish.effectivePrice ?? dish.price;
 
   return (
@@ -15,7 +15,7 @@ export function DishCard({ dish, isActive, currency = "₹" }) {
         position: "relative",
         width: "100%",
         height: "100%",
-        borderRadius: "22px",
+        borderRadius: "20px",
         overflow: "hidden",
         border: isActive ? "2.5px solid #F4DE8B" : "1.5px solid rgba(172, 132, 75, 0.35)",
         boxShadow: isActive ? "var(--card-shadow-hover)" : "var(--card-shadow)",
@@ -27,6 +27,7 @@ export function DishCard({ dish, isActive, currency = "₹" }) {
       <SmartImage
         src={dish.imageUrl}
         alt={dish.name}
+        targetWidth={900}
         style={{
           width: "100%",
           height: "100%",
@@ -68,7 +69,7 @@ export function DishCard({ dish, isActive, currency = "₹" }) {
                 height: "8px",
                 borderRadius: "50%",
                 flexShrink: 0,
-                backgroundColor: isVeg ? "var(--veg-green)" : isAlcohol ? "#A78BFA" : "var(--nonveg-red)",
+                backgroundColor: isVeg ? "var(--veg-green)" : isBar ? "#A78BFA" : "var(--nonveg-red)",
                 boxShadow: isVeg
                   ? "0 0 5px rgba(36, 150, 63, 0.8)"
                   : "0 0 5px rgba(222, 42, 27, 0.8)"

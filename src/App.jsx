@@ -6,6 +6,14 @@ import Menu from "./pages/Menu.jsx";
 import Intro from "./pages/Intro.jsx";
 import brand from "./config/brand.js";
 
+// Admin Imports
+import { AuthProvider } from "./admin/context/AuthContext.jsx";
+import { ProtectedRoute } from "./admin/components/ProtectedRoute.jsx";
+import AdminLogin from "./admin/pages/AdminLogin.jsx";
+import AdminDashboard from "./admin/pages/AdminDashboard.jsx";
+import FloorAdmin from "./admin/pages/FloorAdmin.jsx";
+import "./admin/styles/admin.css";
+
 // Root Route handler managing Intro display on "/"
 function RootRoute() {
   const [showIntro, setShowIntro] = useState(() => {
@@ -29,40 +37,6 @@ function FloorMenuRoute({ floor }) {
   return <Menu />;
 }
 
-// Stage 3 Admin Placeholder
-function AdminPlaceholder() {
-  return (
-    <div style={{ padding: "48px 24px", textAlign: "center", minHeight: "80vh", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
-      <img
-        src={brand.logoPath || "/assets/logo.png"}
-        alt={brand.name}
-        style={{ height: "90px", marginBottom: "16px" }}
-      />
-      <h1 style={{ fontFamily: "var(--font-heading)", fontSize: "24px", color: "var(--text)", marginBottom: "8px" }}>
-        K2N Management Portal
-      </h1>
-      <p style={{ color: "var(--muted)", maxWidth: "320px", marginBottom: "24px", fontSize: "14px" }}>
-        Admin Portal is staged for development in Stage 3. Stay tuned for real-time menu management.
-      </p>
-      <a
-        href="/"
-        style={{
-          display: "inline-block",
-          backgroundColor: "var(--red)",
-          color: "#FFF",
-          padding: "10px 24px",
-          borderRadius: "999px",
-          textDecoration: "none",
-          fontWeight: 600,
-          fontSize: "14px"
-        }}
-      >
-        &larr; Return to Customer Menu
-      </a>
-    </div>
-  );
-}
-
 // Floor-aware wrapper so MenuProvider knows initial floor
 function FloorAwareMenuProvider({ children }) {
   const location = useLocation();
@@ -80,17 +54,45 @@ export function App() {
 
   return (
     <BrowserRouter>
-      <FloorAwareMenuProvider>
-        <div className="app-frame">
-          <Routes>
-            <Route path="/" element={<RootRoute />} />
-            <Route path="/ground" element={<FloorMenuRoute floor="ground" />} />
-            <Route path="/top" element={<FloorMenuRoute floor="top" />} />
-            <Route path="/admin" element={<AdminPlaceholder />} />
-            <Route path="*" element={<Navigate to="/" replace />} />
-          </Routes>
-        </div>
-      </FloorAwareMenuProvider>
+      <AuthProvider>
+        <Routes>
+          {/* Admin Routes (Full Width / Responsive) */}
+          <Route path="/admin/login" element={<AdminLogin />} />
+          <Route
+            path="/admin"
+            element={
+              <ProtectedRoute>
+                <AdminDashboard />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/admin/:floorId"
+            element={
+              <ProtectedRoute>
+                <FloorAdmin />
+              </ProtectedRoute>
+            }
+          />
+
+          {/* Customer Facing Routes (App Frame) */}
+          <Route
+            path="/*"
+            element={
+              <FloorAwareMenuProvider>
+                <div className="app-frame">
+                  <Routes>
+                    <Route path="/" element={<RootRoute />} />
+                    <Route path="/ground" element={<FloorMenuRoute floor="ground" />} />
+                    <Route path="/top" element={<FloorMenuRoute floor="top" />} />
+                    <Route path="*" element={<Navigate to="/" replace />} />
+                  </Routes>
+                </div>
+              </FloorAwareMenuProvider>
+            }
+          />
+        </Routes>
+      </AuthProvider>
     </BrowserRouter>
   );
 }

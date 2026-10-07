@@ -32,7 +32,7 @@ export function ListView() {
     >
       {displayedItems.map((dish, idx) => {
         const isVeg = dish.type === "veg";
-        const isAlcohol = dish.type === "alcohol";
+        const isBar = dish.type === "bar";
         const displayPrice = dish.effectivePrice ?? dish.price;
 
         return (
@@ -75,6 +75,7 @@ export function ListView() {
               <SmartImage
                 src={dish.imageUrl}
                 alt={dish.name}
+                targetWidth={200}
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
               />
             </div>
@@ -89,7 +90,7 @@ export function ListView() {
                     height: "7.5px",
                     borderRadius: "50%",
                     flexShrink: 0,
-                    backgroundColor: isVeg ? "var(--veg-green)" : isAlcohol ? "#8B5CF6" : "var(--nonveg-red)"
+                    backgroundColor: isVeg ? "var(--veg-green)" : isBar ? "#8B5CF6" : "var(--nonveg-red)"
                   }}
                 />
 

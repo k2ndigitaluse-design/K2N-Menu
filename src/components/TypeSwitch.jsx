@@ -10,11 +10,11 @@ export function TypeSwitch() {
   const options = [
     { id: "veg", label: "Veg", dot: "veg" },
     { id: "nonveg", label: "Non-Veg", dot: "nonveg" },
-    { id: "alcohol", label: "Bar", icon: "bar" }
+    { id: "bar", label: "Bar", icon: "bar" }
   ];
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", margin: "10px 16px 14px", position: "relative", zIndex: 5 }}>
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", margin: "6px 16px 10px", position: "relative", zIndex: 5 }}>
       {/* 3-Option Capsule Switch */}
       <div
         role="tablist"
@@ -101,7 +101,7 @@ export function TypeSwitch() {
       </div>
 
       {/* Legal Age Notice when Bar is selected */}
-      {selectedType === "alcohol" && (
+      {selectedType === "bar" && (
         <div
           role="note"
           style={{

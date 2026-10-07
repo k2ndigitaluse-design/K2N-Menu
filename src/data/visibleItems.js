@@ -1,34 +1,26 @@
 /**
  * visibleItems.js
- * The single source of truth for menu item filtering.
+ * Safety filter engine for K2N Digital Menu.
  *
  * Rules:
  * - Keep an item ONLY if:
- *   1. item.floors includes the floor id (e.g. "ground" or "top")
- *   2. floor.allowedTypes includes item.type ("veg", "nonveg", "alcohol")
- *   3. item.available is true
- * - HARD SAFETY: Non-veg and alcohol items must NEVER reach the ground floor screens,
- *   even if data is corrupted or incorrectly configured.
+ *   1. The floor's allowedTypes includes item.type ("veg" | "nonveg" | "bar")
+ * - HARD SAFETY: Non-veg and bar items must NEVER reach the Ground floor screens,
+ *   even if malformed or misconfigured in Firestore data.
  */
 
 export function isItemVisibleOnFloor(item, floor) {
-  if (!item || !item.available) return false;
+  if (!item || !item.name) return false;
 
   const floorId = typeof floor === "string" ? floor : floor?.id;
   const allowedTypes = Array.isArray(floor?.allowedTypes)
     ? floor.allowedTypes
     : floorId === "ground"
     ? ["veg"]
-    : ["veg", "nonveg", "alcohol"];
+    : ["veg", "nonveg", "bar"];
 
   // Absolute hard safeguard for ground floor
   if (floorId === "ground" && item.type !== "veg") {
-    return false;
-  }
-
-  // Check item floor inclusion
-  const itemFloors = Array.isArray(item.floors) ? item.floors : [];
-  if (!itemFloors.includes(floorId)) {
     return false;
   }
 
@@ -41,48 +33,12 @@ export function isItemVisibleOnFloor(item, floor) {
 }
 
 /**
- * Filter menu data for a specific floor.
- * Handles both flat array of items and category-grouped menu [{ id, name, items }].
- *
- * @param {Array} menu - Category list [{ id, name, items: [...] }] or flat array of items
- * @param {Object|string} floor - Floor object or floor ID string ("ground" | "top")
- * @returns {Array} Flat list of visible items for that floor
- */
-export function visibleItems(menu, floor) {
-  if (!Array.isArray(menu)) return [];
-
-  const flatList = [];
-
-  for (const entry of menu) {
-    if (entry && Array.isArray(entry.items)) {
-      // Category structure
-      for (const item of entry.items) {
-        if (isItemVisibleOnFloor(item, floor)) {
-          flatList.push({
-            ...item,
-            category: item.category || entry.id,
-            categoryName: entry.name
-          });
-        }
-      }
-    } else if (entry && entry.id) {
-      // Direct item
-      if (isItemVisibleOnFloor(entry, floor)) {
-        flatList.push(entry);
-      }
-    }
-  }
-
-  return flatList;
-}
-
-/**
  * Filter menu categories keeping only categories that have visible items on the floor.
  */
-export function visibleCategories(menu, floor) {
-  if (!Array.isArray(menu)) return [];
+export function visibleCategories(categories, floor) {
+  if (!Array.isArray(categories)) return [];
 
-  return menu
+  return categories
     .map((cat) => {
       const items = (cat.items || []).filter((item) => isItemVisibleOnFloor(item, floor));
       return {
@@ -91,6 +47,29 @@ export function visibleCategories(menu, floor) {
       };
     })
     .filter((cat) => cat.items.length > 0);
+}
+
+/**
+ * Returns a flat list of all visible items on the floor.
+ */
+export function visibleItems(categories, floor) {
+  if (!Array.isArray(categories)) return [];
+
+  const flatList = [];
+  for (const cat of categories) {
+    if (!cat || !Array.isArray(cat.items)) continue;
+    for (const item of cat.items) {
+      if (isItemVisibleOnFloor(item, floor)) {
+        flatList.push({
+          ...item,
+          category: item.category || cat.id,
+          categoryName: cat.name
+        });
+      }
+    }
+  }
+
+  return flatList;
 }
 
 export default visibleItems;

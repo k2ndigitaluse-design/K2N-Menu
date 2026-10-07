@@ -1,12 +1,13 @@
 import React, { createContext, useContext, useState, useEffect, useMemo, useCallback } from "react";
-import { getBrand, getFloors, getMenu } from "../data/dataSource.js";
+import { getBrand, getFloors, getMenu, getFromCache } from "../data/dataSource.js";
 import { isItemVisibleOnFloor } from "../data/visibleItems.js";
 
 const MenuContext = createContext(null);
 
 const STORAGE_KEYS = {
   TYPE_PREFIX: "k2n_type_",
-  VIEW_MODE: "k2n_view_mode"
+  VIEW_MODE: "k2n_view_mode",
+  MENU_PREFIX: "k2n_menu_"
 };
 
 function safeGetStorage(key, fallback) {
@@ -28,11 +29,15 @@ export function MenuProvider({ children, initialFloor = "ground" }) {
   const [floorId, setFloorId] = useState(initialFloor);
   const [brand, setBrand] = useState(null);
   const [floorsConfig, setFloorsConfig] = useState(null);
-  const [rawMenu, setRawMenu] = useState([]);
-  const [loading, setLoading] = useState(true);
+
+  // Raw menu categories for current floor
+  const [rawMenu, setRawMenu] = useState(() => {
+    return getFromCache(`${STORAGE_KEYS.MENU_PREFIX}${initialFloor}`) || [];
+  });
+  const [loading, setLoading] = useState(rawMenu.length === 0);
   const [error, setError] = useState(null);
 
-  // Type filter: ground floor is strictly "veg"; top floor can be "veg" | "nonveg" | "alcohol"
+  // Type filter: ground floor is strictly "veg"; top floor can be "veg" | "nonveg" | "bar"
   const [selectedType, setSelectedTypeState] = useState(() => {
     if (initialFloor === "ground") return "veg";
     return safeGetStorage(STORAGE_KEYS.TYPE_PREFIX + "top", "nonveg");
@@ -46,7 +51,7 @@ export function MenuProvider({ children, initialFloor = "ground" }) {
     return safeGetStorage(STORAGE_KEYS.VIEW_MODE, "individual");
   });
 
-  // Active dish index in current filtered list (for sync between carousel and thumbnail wheel)
+  // Active dish index in current filtered list
   const [selectedDishIndex, setSelectedDishIndex] = useState(0);
 
   // Set floor and enforce floor constraints
@@ -60,6 +65,15 @@ export function MenuProvider({ children, initialFloor = "ground" }) {
     }
     setSelectedCategory("all");
     setSelectedDishIndex(0);
+
+    // Instant load from cache if available
+    const cached = getFromCache(`${STORAGE_KEYS.MENU_PREFIX}${newFloor}`);
+    if (cached) {
+      setRawMenu(cached);
+      setLoading(false);
+    } else {
+      setLoading(true);
+    }
   }, []);
 
   const setSelectedType = useCallback((type) => {
@@ -78,36 +92,32 @@ export function MenuProvider({ children, initialFloor = "ground" }) {
     safeSetStorage(STORAGE_KEYS.VIEW_MODE, mode);
   }, []);
 
-  // Load initial data
-  useEffect(() => {
-    let mounted = true;
-    async function loadData() {
-      try {
-        setLoading(true);
-        const [brandRes, floorsRes, menuRes] = await Promise.all([
-          getBrand(),
-          getFloors(),
-          getMenu()
-        ]);
-        if (mounted) {
-          setBrand(brandRes);
-          setFloorsConfig(floorsRes);
-          setRawMenu(menuRes);
-          setLoading(false);
-        }
-      } catch (err) {
-        if (mounted) {
-          console.error("Failed to load menu data:", err);
-          setError("Failed to load menu. Please refresh.");
-          setLoading(false);
-        }
+  // Fetch Menu for current floor (with background refresh)
+  const fetchMenuData = useCallback(async (targetFloor) => {
+    try {
+      const [brandRes, floorsRes, menuRes] = await Promise.all([
+        getBrand(),
+        getFloors(),
+        getMenu(targetFloor)
+      ]);
+      setBrand(brandRes);
+      setFloorsConfig(floorsRes);
+      setRawMenu(menuRes);
+      setError(null);
+    } catch (err) {
+      console.error(`[MenuContext] Error fetching menu for ${targetFloor}:`, err);
+      const cached = getFromCache(`${STORAGE_KEYS.MENU_PREFIX}${targetFloor}`);
+      if (!cached || cached.length === 0) {
+        setError("Menu is loading, please refresh");
       }
+    } finally {
+      setLoading(false);
     }
-    loadData();
-    return () => {
-      mounted = false;
-    };
   }, []);
+
+  useEffect(() => {
+    fetchMenuData(floorId);
+  }, [floorId, fetchMenuData]);
 
   // Floor configuration object
   const activeFloorConfig = useMemo(() => {
@@ -121,24 +131,21 @@ export function MenuProvider({ children, initialFloor = "ground" }) {
 
     const items = [];
     for (const cat of rawMenu) {
-      if (!cat.items) continue;
+      if (!cat.items || !Array.isArray(cat.items)) continue;
       for (const item of cat.items) {
-        // Must be visible on floor
+        // Must pass floor safety filter
         if (!isItemVisibleOnFloor(item, activeFloorConfig)) continue;
 
-        // If top floor, match selected dietary type
+        // On top floor, match selected dietary type
         if (floorId === "top") {
           if (item.type !== selectedType) continue;
         }
-
-        // Calculate floor-specific price
-        const effectivePrice = item.priceByFloor?.[floorId] ?? item.price;
 
         items.push({
           ...item,
           category: cat.id,
           categoryName: cat.name,
-          effectivePrice
+          effectivePrice: Number(item.price) || 0
         });
       }
     }
@@ -166,7 +173,7 @@ export function MenuProvider({ children, initialFloor = "ground" }) {
     return floorItems.filter((i) => i.category === selectedCategory);
   }, [floorItems, selectedCategory]);
 
-  // Ensure selectedDishIndex stays within bounds
+  // Keep selectedDishIndex in bounds
   useEffect(() => {
     if (selectedDishIndex >= displayedItems.length && displayedItems.length > 0) {
       setSelectedDishIndex(0);
@@ -184,13 +191,15 @@ export function MenuProvider({ children, initialFloor = "ground" }) {
     selectedCategory,
     setSelectedCategory,
     visibleCategories,
+    rawMenu,
     displayedItems,
     viewMode,
     setViewMode,
     selectedDishIndex,
     setSelectedDishIndex,
     loading,
-    error
+    error,
+    refreshMenu: () => fetchMenuData(floorId)
   };
 
   return <MenuContext.Provider value={value}>{children}</MenuContext.Provider>;

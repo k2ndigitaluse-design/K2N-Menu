@@ -36,7 +36,7 @@ export function GridView() {
     >
       {displayedItems.map((dish, idx) => {
         const isVeg = dish.type === "veg";
-        const isAlcohol = dish.type === "alcohol";
+        const isBar = dish.type === "bar";
         const displayPrice = dish.effectivePrice ?? dish.price;
 
         return (
@@ -70,6 +70,7 @@ export function GridView() {
               <SmartImage
                 src={dish.imageUrl}
                 alt={dish.name}
+                targetWidth={400}
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
               />
             </div>
@@ -92,7 +93,7 @@ export function GridView() {
                     height: "7px",
                     borderRadius: "50%",
                     flexShrink: 0,
-                    backgroundColor: isVeg ? "var(--veg-green)" : isAlcohol ? "#8B5CF6" : "var(--nonveg-red)"
+                    backgroundColor: isVeg ? "var(--veg-green)" : isBar ? "#8B5CF6" : "var(--nonveg-red)"
                   }}
                 />
 

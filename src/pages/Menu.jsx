@@ -67,6 +67,24 @@ export function Menu() {
     );
   }
 
+  const { rawMenu } = useMenu();
+
+  if (!rawMenu || rawMenu.length === 0) {
+    return (
+      <div className="menu-page" style={{ display: "flex", flexDirection: "column", height: "100%", width: "100%", overflow: "hidden" }}>
+        <Header />
+        <div style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: "32px 20px", textAlign: "center" }}>
+          <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "22px", color: "var(--text)", marginBottom: "8px" }}>
+            Menu coming soon
+          </h2>
+          <p style={{ color: "var(--muted)", fontSize: "14px", maxWidth: "280px" }}>
+            We are curating an exquisite dining experience for this floor. Please check back shortly.
+          </p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div
       className="menu-page"
