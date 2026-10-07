@@ -106,11 +106,12 @@ export function SmartImage({
             <span>K</span>
             <span
               style={{
-                fontSize: "1.28em",
+                fontSize: "1.54em",
                 fontWeight: 800,
                 display: "inline-block",
-                lineHeight: 1,
-                transform: "translateY(-0.5px)"
+                lineHeight: 0.9,
+                transform: "translateY(-1px)",
+                padding: "0 1px"
               }}
             >
               2

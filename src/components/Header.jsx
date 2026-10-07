@@ -56,11 +56,12 @@ export function Header() {
           <span>K</span>
           <span
             style={{
-              fontSize: "1.28em",
+              fontSize: "1.54em",
               fontWeight: 800,
               display: "inline-block",
-              lineHeight: 1,
-              transform: "translateY(-1px)"
+              lineHeight: 0.9,
+              transform: "translateY(-1.5px)",
+              padding: "0 1px"
             }}
           >
             2

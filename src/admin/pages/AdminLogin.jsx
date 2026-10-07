@@ -123,7 +123,7 @@ export function AdminLogin() {
             }}
           >
             <span>K</span>
-            <span style={{ fontSize: "1.28em", display: "inline-block", transform: "translateY(-1px)" }}>2</span>
+            <span style={{ fontSize: "1.54em", display: "inline-block", lineHeight: 0.9, transform: "translateY(-1.5px)", padding: "0 1px" }}>2</span>
             <span>N&nbsp;&nbsp;Admin</span>
           </h1>
           <p
