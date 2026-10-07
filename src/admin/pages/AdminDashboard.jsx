@@ -20,7 +20,11 @@ export function AdminDashboard() {
       {/* Top Header */}
       <header className="admin-header">
         <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-          <span style={{ fontSize: "24px" }}>🏨</span>
+          <img
+            src="/assets/logo.png"
+            alt="K2N"
+            style={{ width: "38px", height: "38px", objectFit: "contain", flexShrink: 0 }}
+          />
           <div>
             <h1
               style={{

@@ -97,15 +97,20 @@ export function AdminLogin() {
               display: "inline-flex",
               alignItems: "center",
               justifyContent: "center",
-              width: "56px",
-              height: "56px",
+              width: "60px",
+              height: "60px",
               borderRadius: "50%",
               backgroundColor: "#FAF6EE",
               border: "1px solid var(--gold-border)",
-              marginBottom: "12px"
+              marginBottom: "12px",
+              padding: "6px"
             }}
           >
-            <span style={{ fontSize: "28px" }}>🏨</span>
+            <img
+              src="/assets/logo.png"
+              alt="K2N"
+              style={{ width: "100%", height: "100%", objectFit: "contain" }}
+            />
           </div>
           <h1
             style={{
