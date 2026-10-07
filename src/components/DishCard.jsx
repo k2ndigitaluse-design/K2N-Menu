@@ -56,12 +56,12 @@ export function DishCard({ dish, isActive, currency = "₹" }) {
         <div
           style={{
             display: "flex",
-            alignItems: "center",
+            alignItems: "flex-start",
             justifyContent: "space-between",
-            gap: "8px"
+            gap: "10px"
           }}
         >
-          <div style={{ display: "flex", alignItems: "center", gap: "6px", minWidth: 0 }}>
+          <div style={{ display: "flex", alignItems: "flex-start", gap: "7px", flex: 1, minWidth: 0 }}>
             {/* Veg / Non-veg dot */}
             <span
               style={{
@@ -69,6 +69,7 @@ export function DishCard({ dish, isActive, currency = "₹" }) {
                 height: "8px",
                 borderRadius: "50%",
                 flexShrink: 0,
+                marginTop: "6px",
                 backgroundColor: isVeg ? "var(--veg-green)" : isBar ? "#A78BFA" : "var(--nonveg-red)",
                 boxShadow: isVeg
                   ? "0 0 5px rgba(36, 150, 63, 0.8)"
@@ -79,14 +80,14 @@ export function DishCard({ dish, isActive, currency = "₹" }) {
             <h2
               style={{
                 fontFamily: "var(--font-heading)",
-                fontSize: "17px",
+                fontSize: "16.5px",
                 fontWeight: 700,
                 color: "#FFFFFF",
                 letterSpacing: "0.2px",
-                whiteSpace: "nowrap",
-                overflow: "hidden",
-                textOverflow: "ellipsis",
-                margin: 0
+                lineHeight: 1.25,
+                margin: 0,
+                wordBreak: "normal",
+                overflowWrap: "break-word"
               }}
             >
               {dish.name}
@@ -99,13 +100,14 @@ export function DishCard({ dish, isActive, currency = "₹" }) {
               backgroundColor: "var(--red)",
               color: "var(--yellow)",
               fontFamily: "var(--font-body)",
-              fontSize: "15.5px",
+              fontSize: "15px",
               fontWeight: 800,
-              padding: "4px 11px",
+              padding: "4px 10px",
               borderRadius: "8px",
               boxShadow: "0 2px 8px rgba(0, 0, 0, 0.4)",
               flexShrink: 0,
-              letterSpacing: "0.5px"
+              letterSpacing: "0.4px",
+              marginTop: "1px"
             }}
           >
             {currency}{displayPrice}
