@@ -49,10 +49,23 @@ export function Header() {
             marginBottom: "4px",
             display: "flex",
             alignItems: "center",
-            justifyContent: "center"
+            justifyContent: "center",
+            gap: "0.5px"
           }}
         >
-          K2N&nbsp;&nbsp;HOTELS
+          <span>K</span>
+          <span
+            style={{
+              fontSize: "1.28em",
+              fontWeight: 800,
+              display: "inline-block",
+              lineHeight: 1,
+              transform: "translateY(-1px)"
+            }}
+          >
+            2
+          </span>
+          <span>N&nbsp;&nbsp;HOTELS</span>
         </div>
 
         {/* Floor Label with Accenting Gold Lines */}

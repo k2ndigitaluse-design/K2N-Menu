@@ -56,10 +56,26 @@ export function FloorChooser() {
             letterSpacing: "4px",
             color: "var(--red)",
             fontWeight: 800,
-            marginBottom: "4px"
+            marginBottom: "4px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: "0.5px"
           }}
         >
-          {brand.subTagline || "K2N HOTELS"}
+          <span>K</span>
+          <span
+            style={{
+              fontSize: "1.28em",
+              fontWeight: 800,
+              display: "inline-block",
+              lineHeight: 1,
+              transform: "translateY(-1px)"
+            }}
+          >
+            2
+          </span>
+          <span>N&nbsp;&nbsp;HOTELS</span>
         </div>
 
         <p

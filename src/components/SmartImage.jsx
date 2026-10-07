@@ -97,10 +97,25 @@ export function SmartImage({
               color: "var(--red)",
               fontWeight: 800,
               letterSpacing: "2.5px",
-              textTransform: "uppercase"
+              textTransform: "uppercase",
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "0.5px"
             }}
           >
-            K2N HOTELS
+            <span>K</span>
+            <span
+              style={{
+                fontSize: "1.28em",
+                fontWeight: 800,
+                display: "inline-block",
+                lineHeight: 1,
+                transform: "translateY(-0.5px)"
+              }}
+            >
+              2
+            </span>
+            <span>N&nbsp;&nbsp;HOTELS</span>
           </span>
         </div>
       )}

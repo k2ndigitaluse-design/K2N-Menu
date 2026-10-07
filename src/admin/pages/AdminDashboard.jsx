@@ -46,10 +46,15 @@ export function AdminDashboard() {
                 fontWeight: 800,
                 color: "var(--red)",
                 margin: 0,
-                lineHeight: 1.2
+                lineHeight: 1.2,
+                display: "flex",
+                alignItems: "center",
+                gap: "0.5px"
               }}
             >
-              K2N Hotels Admin
+              <span>K</span>
+              <span style={{ fontSize: "1.28em", display: "inline-block", transform: "translateY(-1px)" }}>2</span>
+              <span>N&nbsp;&nbsp;Hotels Admin</span>
             </h1>
             <p style={{ margin: 0, fontSize: "11.5px", color: "var(--muted)" }}>
               {currentUser?.email || "Owner Portal"}

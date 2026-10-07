@@ -115,10 +115,16 @@ export function AdminLogin() {
               fontSize: "24px",
               fontWeight: 800,
               color: "var(--red)",
-              margin: "0 0 6px"
+              margin: "0 0 6px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "0.5px"
             }}
           >
-            K2N Admin
+            <span>K</span>
+            <span style={{ fontSize: "1.28em", display: "inline-block", transform: "translateY(-1px)" }}>2</span>
+            <span>N&nbsp;&nbsp;Admin</span>
           </h1>
           <p
             style={{
