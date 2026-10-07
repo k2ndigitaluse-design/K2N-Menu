@@ -1,0 +1,31 @@
+:root {
+  /* Brand Color Palette */
+  --bg: #F9F5EF;              /* Warm cream */
+  --bg-desktop: #EBE3D5;      /* Subtle darker cream backdrop on desktop */
+  --card-bg: #FFFFFF;
+  --red: #DE2A1B;             /* Main accent: active tabs, pills, tags */
+  --red-hover: #C52214;
+  --yellow: #FAE013;          /* High contrast price text on red tags */
+  --gold-start: #AC844B;      /* Deep antique gold */
+  --gold-end: #F4DE8B;        /* Pale radiant gold */
+  --gold-border: rgba(172, 132, 75, 0.45);
+  --gold-glow: rgba(244, 222, 139, 0.4);
+  --text: #4B170E;            /* Deep warm brown for headings & text */
+  --muted: #8A6A5C;           /* Secondary muted brown */
+  --teal: #9EC6C1;            /* Accent teal */
+  --veg-green: #24963F;       /* Veg symbol green */
+  --nonveg-red: #DE2A1B;      /* Non-veg symbol red */
+
+  /* Typography */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Shadows */
+  --card-shadow: 0 10px 25px -4px rgba(75, 23, 14, 0.12), 0 4px 10px -2px rgba(75, 23, 14, 0.08);
+  --card-shadow-hover: 0 16px 32px -4px rgba(75, 23, 14, 0.18), 0 6px 14px -3px rgba(75, 23, 14, 0.12);
+  --glow-shadow: 0 0 25px rgba(244, 222, 139, 0.5);
+
+  /* Layout Dimensions */
+  --app-max-width: 430px;
+  --bottom-bar-height: 64px;
+}
