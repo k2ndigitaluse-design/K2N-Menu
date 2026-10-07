@@ -95,7 +95,7 @@ export function FloorChooser() {
           {/* Ground Floor Button */}
           <button
             onClick={() => navigate("/ground")}
-            aria-label="Ground Floor, Pure Veg"
+            aria-label="Ground Floor, Main Dining"
             style={{
               display: "flex",
               alignItems: "center",
@@ -122,28 +122,27 @@ export function FloorChooser() {
                 >
                   Ground Floor
                 </span>
-              </div>
-              <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-                {/* Pure Veg Badge */}
                 <span
                   style={{
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: "4px",
-                    backgroundColor: "#EAF7ED",
-                    color: "#187332",
-                    fontSize: "12px",
+                    fontSize: "11px",
                     fontWeight: 700,
+                    color: "#166534",
+                    backgroundColor: "#DCFCE7",
                     padding: "2px 8px",
-                    borderRadius: "999px"
+                    borderRadius: "6px"
                   }}
                 >
-                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#24963F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
-                    <path d="M2 21c0-3 1.85-5.36 5.08-6" />
-                  </svg>
-                  Pure Veg
+                  Regular
                 </span>
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                <span style={{ fontSize: "12px", color: "var(--muted)", fontWeight: 500 }}>
+                  Veg, Non-Veg &amp; Bar
+                </span>
+                <div style={{ display: "inline-flex", gap: "4px", alignItems: "center" }}>
+                  <span className="type-dot veg" style={{ width: "6px", height: "6px" }} />
+                  <span className="type-dot nonveg" style={{ width: "6px", height: "6px" }} />
+                </div>
               </div>
             </div>
 
@@ -167,7 +166,7 @@ export function FloorChooser() {
           {/* Top Floor Button */}
           <button
             onClick={() => navigate("/top")}
-            aria-label="Top Floor, Veg, Non-Veg and Bar"
+            aria-label="Top Floor, AC and Lounge"
             style={{
               display: "flex",
               alignItems: "center",
@@ -183,16 +182,30 @@ export function FloorChooser() {
             }}
           >
             <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
-              <span
-                style={{
-                  fontFamily: "var(--font-heading)",
-                  fontSize: "19px",
-                  fontWeight: 700,
-                  color: "var(--text)"
-                }}
-              >
-                Top Floor
-              </span>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                <span
+                  style={{
+                    fontFamily: "var(--font-heading)",
+                    fontSize: "19px",
+                    fontWeight: 700,
+                    color: "var(--text)"
+                  }}
+                >
+                  Top Floor
+                </span>
+                <span
+                  style={{
+                    fontSize: "11px",
+                    fontWeight: 700,
+                    color: "#92400E",
+                    backgroundColor: "#FEF3C7",
+                    padding: "2px 8px",
+                    borderRadius: "6px"
+                  }}
+                >
+                  AC / +₹20
+                </span>
+              </div>
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                 <span style={{ fontSize: "12px", color: "var(--muted)", fontWeight: 500 }}>
                   Veg, Non-Veg &amp; Bar

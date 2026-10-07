@@ -126,7 +126,7 @@ export function AdminDashboard() {
               backgroundColor: "#FFFDF9",
               borderRadius: "20px",
               border: "1.5px solid var(--gold-border)",
-              padding: "24px 20px",
+              padding: "20px 18px",
               display: "flex",
               alignItems: "center",
               justifyContent: "space-between",
@@ -135,29 +135,29 @@ export function AdminDashboard() {
             }}
             className="hover-card"
           >
-            <div style={{ display: "flex", alignItems: "center", gap: "18px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
               <div
                 style={{
-                  width: "56px",
-                  height: "56px",
-                  borderRadius: "16px",
+                  width: "50px",
+                  height: "50px",
+                  borderRadius: "14px",
                   backgroundColor: "#DCFCE7",
                   border: "1.5px solid #86EFAC",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  fontSize: "26px",
+                  fontSize: "24px",
                   flexShrink: 0
                 }}
               >
-                🌱
+                🍽️
               </div>
               <div>
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "4px" }}>
                   <h3
                     style={{
                       fontFamily: "var(--font-heading)",
-                      fontSize: "18px",
+                      fontSize: "17px",
                       fontWeight: 700,
                       color: "var(--text)",
                       margin: 0
@@ -175,22 +175,22 @@ export function AdminDashboard() {
                       fontWeight: 700
                     }}
                   >
-                    Pure Veg
+                    Base Prices
                   </span>
                 </div>
                 <p
                   style={{
                     fontFamily: "var(--font-body)",
-                    fontSize: "13px",
+                    fontSize: "12.5px",
                     color: "var(--muted)",
                     margin: 0
                   }}
                 >
-                  Manage strictly vegetarian South & North Indian dishes
+                  Manage regular dining dishes (Veg, Non-Veg &amp; Bar)
                 </p>
               </div>
             </div>
-            <span style={{ fontSize: "20px", color: "var(--gold-dark)", fontWeight: 700 }}>
+            <span style={{ fontSize: "18px", color: "var(--gold-dark)", fontWeight: 700 }}>
               ➔
             </span>
           </Link>
@@ -203,7 +203,7 @@ export function AdminDashboard() {
               backgroundColor: "#FFFDF9",
               borderRadius: "20px",
               border: "1.5px solid var(--gold-border)",
-              padding: "24px 20px",
+              padding: "20px 18px",
               display: "flex",
               alignItems: "center",
               justifyContent: "space-between",
@@ -212,18 +212,18 @@ export function AdminDashboard() {
             }}
             className="hover-card"
           >
-            <div style={{ display: "flex", alignItems: "center", gap: "18px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
               <div
                 style={{
-                  width: "56px",
-                  height: "56px",
-                  borderRadius: "16px",
+                  width: "50px",
+                  height: "50px",
+                  borderRadius: "14px",
                   backgroundColor: "#FEF3C7",
                   border: "1.5px solid #FCD34D",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  fontSize: "26px",
+                  fontSize: "24px",
                   flexShrink: 0
                 }}
               >
@@ -234,7 +234,7 @@ export function AdminDashboard() {
                   <h3
                     style={{
                       fontFamily: "var(--font-heading)",
-                      fontSize: "18px",
+                      fontSize: "17px",
                       fontWeight: 700,
                       color: "var(--text)",
                       margin: 0
@@ -252,22 +252,22 @@ export function AdminDashboard() {
                       fontWeight: 700
                     }}
                   >
-                    Multicuisine & Bar
+                    AC / +₹20
                   </span>
                 </div>
                 <p
                   style={{
                     fontFamily: "var(--font-body)",
-                    fontSize: "13px",
+                    fontSize: "12.5px",
                     color: "var(--muted)",
                     margin: 0
                   }}
                 >
-                  Manage Veg, Non-Veg appetizers, mains & Bar beverages
+                  Manage AC / Lounge dishes (Veg, Non-Veg &amp; Bar)
                 </p>
               </div>
             </div>
-            <span style={{ fontSize: "20px", color: "var(--gold-dark)", fontWeight: 700 }}>
+            <span style={{ fontSize: "18px", color: "var(--gold-dark)", fontWeight: 700 }}>
               ➔
             </span>
           </Link>

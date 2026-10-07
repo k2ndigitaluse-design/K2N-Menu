@@ -113,43 +113,25 @@ export function ItemEditRow({
           >
             Type:
           </label>
-          {isGround ? (
-            <span
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "4px",
-                padding: "3px 8px",
-                borderRadius: "6px",
-                backgroundColor: "#DCFCE7",
-                color: "#166534",
-                fontSize: "11.5px",
-                fontWeight: 700
-              }}
-            >
-              🟢 Pure Veg
-            </span>
-          ) : (
-            <select
-              value={item.type || "veg"}
-              onChange={(e) => handleFieldChange("type", e.target.value)}
-              style={{
-                padding: "4px 8px",
-                borderRadius: "6px",
-                border: "1px solid rgba(172, 132, 75, 0.35)",
-                fontFamily: "var(--font-body)",
-                fontSize: "12px",
-                fontWeight: 600,
-                backgroundColor: "#FAF6EE",
-                color: "var(--text)",
-                outline: "none"
-              }}
-            >
-              <option value="veg">🟢 Veg</option>
-              <option value="nonveg">🔴 Non-Veg</option>
-              <option value="bar">🍸 Bar / Drinks</option>
-            </select>
-          )}
+          <select
+            value={item.type || "veg"}
+            onChange={(e) => handleFieldChange("type", e.target.value)}
+            style={{
+              padding: "4px 8px",
+              borderRadius: "6px",
+              border: "1px solid rgba(172, 132, 75, 0.35)",
+              fontFamily: "var(--font-body)",
+              fontSize: "12px",
+              fontWeight: 600,
+              backgroundColor: "#FAF6EE",
+              color: "var(--text)",
+              outline: "none"
+            }}
+          >
+            <option value="veg">🟢 Veg</option>
+            <option value="nonveg">🔴 Non-Veg</option>
+            <option value="bar">🍸 Bar / Drinks</option>
+          </select>
         </div>
 
         {/* Delete Dish Button */}

@@ -15,14 +15,7 @@ export function isItemVisibleOnFloor(item, floor) {
   const floorId = typeof floor === "string" ? floor : floor?.id;
   const allowedTypes = Array.isArray(floor?.allowedTypes)
     ? floor.allowedTypes
-    : floorId === "ground"
-    ? ["veg"]
     : ["veg", "nonveg", "bar"];
-
-  // Absolute hard safeguard for ground floor
-  if (floorId === "ground" && item.type !== "veg") {
-    return false;
-  }
 
   // Check floor type permission
   if (!allowedTypes.includes(item.type)) {

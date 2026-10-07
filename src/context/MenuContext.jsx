@@ -37,10 +37,9 @@ export function MenuProvider({ children, initialFloor = "ground" }) {
   const [loading, setLoading] = useState(rawMenu.length === 0);
   const [error, setError] = useState(null);
 
-  // Type filter: ground floor is strictly "veg"; top floor can be "veg" | "nonveg" | "bar"
+  // Type filter: both floors can be "veg" | "nonveg" | "bar"
   const [selectedType, setSelectedTypeState] = useState(() => {
-    if (initialFloor === "ground") return "veg";
-    return safeGetStorage(STORAGE_KEYS.TYPE_PREFIX + "top", "nonveg");
+    return safeGetStorage(STORAGE_KEYS.TYPE_PREFIX + initialFloor, "veg");
   });
 
   // Selected Category ("all" or category id)
@@ -57,12 +56,8 @@ export function MenuProvider({ children, initialFloor = "ground" }) {
   // Set floor and enforce floor constraints
   const setFloor = useCallback((newFloor) => {
     setFloorId(newFloor);
-    if (newFloor === "ground") {
-      setSelectedTypeState("veg");
-    } else {
-      const savedType = safeGetStorage(STORAGE_KEYS.TYPE_PREFIX + "top", "nonveg");
-      setSelectedTypeState(savedType);
-    }
+    const savedType = safeGetStorage(STORAGE_KEYS.TYPE_PREFIX + newFloor, "veg");
+    setSelectedTypeState(savedType);
     setSelectedCategory("all");
     setSelectedDishIndex(0);
 
@@ -77,10 +72,6 @@ export function MenuProvider({ children, initialFloor = "ground" }) {
   }, []);
 
   const setSelectedType = useCallback((type) => {
-    if (floorId === "ground") {
-      setSelectedTypeState("veg");
-      return;
-    }
     setSelectedTypeState(type);
     safeSetStorage(STORAGE_KEYS.TYPE_PREFIX + floorId, type);
     setSelectedCategory("all");
@@ -136,10 +127,8 @@ export function MenuProvider({ children, initialFloor = "ground" }) {
         // Must pass floor safety filter
         if (!isItemVisibleOnFloor(item, activeFloorConfig)) continue;
 
-        // On top floor, match selected dietary type
-        if (floorId === "top") {
-          if (item.type !== selectedType) continue;
-        }
+        // Match selected dietary type (veg, nonveg, or bar)
+        if (item.type !== selectedType) continue;
 
         items.push({
           ...item,

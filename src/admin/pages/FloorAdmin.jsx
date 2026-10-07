@@ -231,7 +231,7 @@ export function FloorAdmin() {
           name: it.name.trim(),
           price: Number(it.price),
           description: (it.description || "").trim(),
-          type: floorId === "ground" ? "veg" : (it.type || "veg"),
+          type: it.type || "veg",
           imageUrl: it.imageUrl || ""
         }))
       };
@@ -291,7 +291,7 @@ export function FloorAdmin() {
   };
 
   const isGround = floorId === "ground";
-  const floorTitle = isGround ? "Ground Floor (Pure Veg)" : "Top Floor (Multicuisine & Bar)";
+  const floorTitle = isGround ? "Ground Floor (Base Prices)" : "Top Floor (+₹20 AC / Lounge)";
 
   return (
     <div
@@ -853,35 +853,33 @@ export function FloorAdmin() {
                         {item.name}
                       </h4>
 
-                      {!isGround && (
-                        <span
-                          style={{
-                            fontSize: "11px",
-                            padding: "2px 8px",
-                            borderRadius: "6px",
-                            backgroundColor:
-                              item.type === "veg"
-                                ? "#DCFCE7"
-                                : item.type === "nonveg"
-                                ? "#FEE2E2"
-                                : "#FEF3C7",
-                            color:
-                              item.type === "veg"
-                                ? "#166534"
-                                : item.type === "nonveg"
-                                ? "#991B1B"
-                                : "#92400E",
-                            fontWeight: 700,
-                            flexShrink: 0
-                          }}
-                        >
-                          {item.type === "veg"
-                            ? "🟢 Veg"
-                            : item.type === "nonveg"
-                            ? "🔴 Non-Veg"
-                            : "🍸 Bar"}
-                        </span>
-                      )}
+                      <span
+                        style={{
+                          fontSize: "11px",
+                          padding: "2px 8px",
+                          borderRadius: "6px",
+                          backgroundColor:
+                            item.type === "veg"
+                              ? "#DCFCE7"
+                              : item.type === "nonveg"
+                              ? "#FEE2E2"
+                              : "#FEF3C7",
+                          color:
+                            item.type === "veg"
+                              ? "#166534"
+                              : item.type === "nonveg"
+                              ? "#991B1B"
+                              : "#92400E",
+                          fontWeight: 700,
+                          flexShrink: 0
+                        }}
+                      >
+                        {item.type === "veg"
+                          ? "🟢 Veg"
+                          : item.type === "nonveg"
+                          ? "🔴 Non-Veg"
+                          : "🍸 Bar"}
+                      </span>
                     </div>
 
                     {/* Right: Price */}

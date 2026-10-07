@@ -91,39 +91,13 @@ export function Header() {
                 fontSize: "10px",
                 fontWeight: 700,
                 letterSpacing: "1.2px",
-                padding: "2.5px 12px",
+                padding: "3px 14px",
                 borderRadius: "999px",
                 boxShadow: "0 2px 6px rgba(222, 42, 27, 0.25)"
               }}
             >
               {floorNameUpper}
             </div>
-
-            {/* Ground Floor Pure Veg Badge */}
-            {isGround && (
-              <div
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "4px",
-                  backgroundColor: "#EAF7ED",
-                  border: "1px solid #75C68A",
-                  color: "#187332",
-                  fontSize: "10.5px",
-                  fontWeight: 700,
-                  padding: "3px 10px",
-                  borderRadius: "999px",
-                  boxShadow: "0 1px 4px rgba(36, 150, 63, 0.15)"
-                }}
-              >
-                {/* Green Leaf SVG */}
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#24963F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
-                  <path d="M2 21c0-3 1.85-5.36 5.08-6" />
-                </svg>
-                <span>Pure Veg</span>
-              </div>
-            )}
           </div>
 
           <div style={{ flex: 1, height: "1px", background: "linear-gradient(90deg, var(--gold-border), transparent)" }} />
