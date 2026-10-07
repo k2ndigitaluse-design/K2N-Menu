@@ -111,30 +111,16 @@ export function FloorChooser() {
             }}
           >
             <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
-              <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                <span
-                  style={{
-                    fontFamily: "var(--font-heading)",
-                    fontSize: "19px",
-                    fontWeight: 700,
-                    color: "var(--text)"
-                  }}
-                >
-                  Ground Floor
-                </span>
-                <span
-                  style={{
-                    fontSize: "11px",
-                    fontWeight: 700,
-                    color: "#166534",
-                    backgroundColor: "#DCFCE7",
-                    padding: "2px 8px",
-                    borderRadius: "6px"
-                  }}
-                >
-                  Regular
-                </span>
-              </div>
+              <span
+                style={{
+                  fontFamily: "var(--font-heading)",
+                  fontSize: "19px",
+                  fontWeight: 700,
+                  color: "var(--text)"
+                }}
+              >
+                Ground Floor
+              </span>
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                 <span style={{ fontSize: "12px", color: "var(--muted)", fontWeight: 500 }}>
                   Veg, Non-Veg &amp; Bar
@@ -166,7 +152,7 @@ export function FloorChooser() {
           {/* Top Floor Button */}
           <button
             onClick={() => navigate("/top")}
-            aria-label="Top Floor, AC and Lounge"
+            aria-label="Top Floor, Lounge Dining"
             style={{
               display: "flex",
               alignItems: "center",
@@ -182,30 +168,16 @@ export function FloorChooser() {
             }}
           >
             <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
-              <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                <span
-                  style={{
-                    fontFamily: "var(--font-heading)",
-                    fontSize: "19px",
-                    fontWeight: 700,
-                    color: "var(--text)"
-                  }}
-                >
-                  Top Floor
-                </span>
-                <span
-                  style={{
-                    fontSize: "11px",
-                    fontWeight: 700,
-                    color: "#92400E",
-                    backgroundColor: "#FEF3C7",
-                    padding: "2px 8px",
-                    borderRadius: "6px"
-                  }}
-                >
-                  AC / +₹20
-                </span>
-              </div>
+              <span
+                style={{
+                  fontFamily: "var(--font-heading)",
+                  fontSize: "19px",
+                  fontWeight: 700,
+                  color: "var(--text)"
+                }}
+              >
+                Top Floor
+              </span>
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                 <span style={{ fontSize: "12px", color: "var(--muted)", fontWeight: 500 }}>
                   Veg, Non-Veg &amp; Bar

@@ -2,10 +2,7 @@ import React from "react";
 import { useMenu } from "../context/MenuContext.jsx";
 
 export function TypeSwitch() {
-  const { floorId, selectedType, setSelectedType } = useMenu();
-
-  // Top floor only
-  if (floorId !== "top") return null;
+  const { selectedType, setSelectedType } = useMenu();
 
   const options = [
     { id: "veg", label: "Veg", dot: "veg" },
