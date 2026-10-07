@@ -295,11 +295,8 @@ export function FloorAdmin() {
 
   return (
     <div
+      className="admin-app-container"
       style={{
-        minHeight: "100vh",
-        backgroundColor: "var(--bg)",
-        display: "flex",
-        flexDirection: "column",
         paddingBottom: isEditMode ? "100px" : "40px"
       }}
     >
@@ -330,20 +327,7 @@ export function FloorAdmin() {
       )}
 
       {/* Top Bar */}
-      <header
-        style={{
-          backgroundColor: "#FFFDF9",
-          borderBottom: "1px solid var(--gold-border)",
-          padding: "12px 16px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          position: "sticky",
-          top: 0,
-          zIndex: 100,
-          boxShadow: "0 2px 10px rgba(75, 23, 14, 0.05)"
-        }}
-      >
+      <header className="admin-header">
         <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
           <button
             type="button"
@@ -477,7 +461,7 @@ export function FloorAdmin() {
       </header>
 
       {/* Main Container */}
-      <main style={{ maxWidth: "680px", width: "100%", margin: "0 auto", padding: "16px 14px", flex: 1 }}>
+      <main className="admin-content">
         {isLoading ? (
           <div style={{ textAlign: "center", padding: "60px 20px" }}>
             <div className="spinner" style={{ margin: "0 auto 12px" }} />
@@ -922,23 +906,7 @@ export function FloorAdmin() {
 
       {/* STICKY BOTTOM BAR (EDIT MODE ONLY) */}
       {isEditMode && (
-        <div
-          style={{
-            position: "fixed",
-            bottom: 0,
-            left: 0,
-            right: 0,
-            backgroundColor: "#FFFDF9",
-            borderTop: "1.5px solid var(--gold-border)",
-            padding: "12px 20px",
-            boxShadow: "0 -8px 25px rgba(75, 23, 14, 0.15)",
-            zIndex: 999,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            gap: "12px"
-          }}
-        >
+        <div className="admin-sticky-bottom">
           <span
             style={{
               fontFamily: "var(--font-body)",

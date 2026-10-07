@@ -68,11 +68,9 @@ export function AdminLogin() {
 
   return (
     <div
+      className="admin-app-container"
       style={{
-        minHeight: "100vh",
-        backgroundColor: "var(--bg)",
         backgroundImage: "radial-gradient(ellipse at 50% 10%, rgba(245, 177, 82, 0.15) 0%, transparent 70%)",
-        display: "flex",
         alignItems: "center",
         justifyContent: "center",
         padding: "20px"

@@ -16,26 +16,9 @@ export function AdminDashboard() {
   };
 
   return (
-    <div
-      style={{
-        minHeight: "100vh",
-        backgroundColor: "var(--bg)",
-        display: "flex",
-        flexDirection: "column"
-      }}
-    >
+    <div className="admin-app-container">
       {/* Top Header */}
-      <header
-        style={{
-          backgroundColor: "#FFFDF9",
-          borderBottom: "1px solid var(--gold-border)",
-          padding: "16px 20px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          boxShadow: "0 2px 10px rgba(75, 23, 14, 0.05)"
-        }}
-      >
+      <header className="admin-header">
         <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
           <span style={{ fontSize: "24px" }}>🏨</span>
           <div>
@@ -104,18 +87,7 @@ export function AdminDashboard() {
       </header>
 
       {/* Main Content Area */}
-      <main
-        style={{
-          flex: 1,
-          maxWidth: "700px",
-          width: "100%",
-          margin: "0 auto",
-          padding: "32px 20px",
-          display: "flex",
-          flexDirection: "column",
-          gap: "24px"
-        }}
-      >
+      <main className="admin-content" style={{ gap: "20px" }}>
         <div>
           <h2
             style={{
