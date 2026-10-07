@@ -4,11 +4,14 @@ import DishCard from "../components/DishCard.jsx";
 import ThumbnailWheel from "../components/ThumbnailWheel.jsx";
 
 export function IndividualView() {
-  const { displayedItems, selectedDishIndex, setSelectedDishIndex, brand } = useMenu();
+  const { displayedItems, selectedDishIndex, setSelectedDishIndex, brand, goToNextCategory, goToPrevCategory } = useMenu();
   const carouselRef = useRef(null);
   const cardRefs = useRef([]);
   const isInternalScroll = useRef(false);
   const scrollDebounce = useRef(null);
+
+  // Touch Swipe State for Category Navigation
+  const touchStartPos = useRef({ x: 0, y: 0, time: 0 });
 
   // Mouse Drag State
   const [isDragging, setIsDragging] = useState(false);
@@ -62,21 +65,54 @@ export function IndividualView() {
     }, 120);
   }, [displayedItems.length, selectedDishIndex, setSelectedDishIndex]);
 
+  // Touch Start / End for Boundary Swipe detection to move to adjacent category
+  const handleTouchStart = (e) => {
+    const touch = e.touches[0];
+    touchStartPos.current = { x: touch.clientX, y: touch.clientY, time: Date.now() };
+  };
+
+  const handleTouchEnd = (e) => {
+    if (!e.changedTouches || e.changedTouches.length === 0) return;
+    const touch = e.changedTouches[0];
+    const deltaX = touch.clientX - touchStartPos.current.x;
+    const deltaY = touch.clientY - touchStartPos.current.y;
+    const timeDiff = Date.now() - touchStartPos.current.time;
+
+    // Fast horizontal flick/swipe
+    if (timeDiff < 400 && Math.abs(deltaX) > 60 && Math.abs(deltaX) > Math.abs(deltaY) * 1.5) {
+      if (deltaX < 0 && selectedDishIndex >= displayedItems.length - 1) {
+        // Swiped left at the end -> next category
+        goToNextCategory();
+      } else if (deltaX > 0 && selectedDishIndex <= 0) {
+        // Swiped right at the beginning -> prev category
+        goToPrevCategory();
+      }
+    }
+  };
+
   // Keyboard navigation (ArrowLeft / ArrowRight)
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === "ArrowLeft") {
         e.preventDefault();
-        setSelectedDishIndex((prev) => Math.max(0, prev - 1));
+        if (selectedDishIndex > 0) {
+          setSelectedDishIndex((prev) => prev - 1);
+        } else {
+          goToPrevCategory();
+        }
       } else if (e.key === "ArrowRight") {
         e.preventDefault();
-        setSelectedDishIndex((prev) => Math.min(displayedItems.length - 1, prev + 1));
+        if (selectedDishIndex < displayedItems.length - 1) {
+          setSelectedDishIndex((prev) => prev + 1);
+        } else {
+          goToNextCategory();
+        }
       }
     };
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [displayedItems.length, setSelectedDishIndex]);
+  }, [displayedItems.length, selectedDishIndex, setSelectedDishIndex, goToNextCategory, goToPrevCategory]);
 
   // Mouse Drag handlers
   const onMouseDown = (e) => {
@@ -123,6 +159,8 @@ export function IndividualView() {
       <div
         ref={carouselRef}
         onScroll={handleScroll}
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
         onMouseDown={onMouseDown}
         onMouseMove={onMouseMove}
         onMouseUp={onMouseUpOrLeave}

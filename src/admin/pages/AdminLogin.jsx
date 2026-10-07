@@ -114,11 +114,11 @@ export function AdminLogin() {
               fontFamily: "var(--font-heading)",
               fontSize: "24px",
               fontWeight: 800,
-              color: "var(--text)",
+              color: "var(--red)",
               margin: "0 0 6px"
             }}
           >
-            K<span style={{ color: "var(--red)", fontSize: "1.25em", verticalAlign: "-0.04em" }}>2</span>N Admin
+            K2N Admin
           </h1>
           <p
             style={{

@@ -54,8 +54,8 @@ export function FloorChooser() {
             fontFamily: "var(--font-heading)",
             fontSize: "14px",
             letterSpacing: "4px",
-            color: "var(--gold-start)",
-            fontWeight: 700,
+            color: "var(--red)",
+            fontWeight: 800,
             marginBottom: "4px"
           }}
         >

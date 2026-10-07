@@ -41,31 +41,18 @@ export function Header() {
         <div
           style={{
             fontFamily: "var(--font-heading)",
-            fontSize: "13px",
-            letterSpacing: "4px",
-            color: "var(--gold-start)",
-            fontWeight: 700,
-            marginTop: "-4px",
+            fontSize: "13.5px",
+            letterSpacing: "3.5px",
+            color: "var(--red)",
+            fontWeight: 800,
+            marginTop: "-2px",
             marginBottom: "4px",
             display: "flex",
             alignItems: "center",
-            gap: "1px"
+            justifyContent: "center"
           }}
         >
-          <span>K</span>
-          <span
-            style={{
-              fontSize: "1.45em",
-              fontWeight: 800,
-              color: "var(--gold-start)",
-              display: "inline-block",
-              transform: "translateY(-0.5px)",
-              padding: "0 1px"
-            }}
-          >
-            2
-          </span>
-          <span>N&nbsp;&nbsp;HOTELS</span>
+          K2N&nbsp;&nbsp;HOTELS
         </div>
 
         {/* Floor Label with Accenting Gold Lines */}

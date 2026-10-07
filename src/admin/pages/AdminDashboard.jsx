@@ -44,12 +44,12 @@ export function AdminDashboard() {
                 fontFamily: "var(--font-heading)",
                 fontSize: "18px",
                 fontWeight: 800,
-                color: "var(--text)",
+                color: "var(--red)",
                 margin: 0,
                 lineHeight: 1.2
               }}
             >
-              K<span style={{ color: "var(--red)", fontSize: "1.25em", verticalAlign: "-0.04em" }}>2</span>N Hotels Admin
+              K2N Hotels Admin
             </h1>
             <p style={{ margin: 0, fontSize: "11.5px", color: "var(--muted)" }}>
               {currentUser?.email || "Owner Portal"}

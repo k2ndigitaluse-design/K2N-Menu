@@ -99,11 +99,11 @@ export function DishCard({ dish, isActive, currency = "₹" }) {
               backgroundColor: "var(--red)",
               color: "var(--yellow)",
               fontFamily: "var(--font-body)",
-              fontSize: "13.5px",
+              fontSize: "15.5px",
               fontWeight: 800,
-              padding: "3px 9px",
-              borderRadius: "7px",
-              boxShadow: "0 2px 6px rgba(0, 0, 0, 0.35)",
+              padding: "4px 11px",
+              borderRadius: "8px",
+              boxShadow: "0 2px 8px rgba(0, 0, 0, 0.4)",
               flexShrink: 0,
               letterSpacing: "0.5px"
             }}

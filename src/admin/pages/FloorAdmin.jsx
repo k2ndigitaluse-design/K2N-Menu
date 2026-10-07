@@ -836,125 +836,82 @@ export function FloorAdmin() {
               </div>
             ) : (
               /* VIEW MODE DISH LIST */
-              <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+              <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                 {currentCategory?.items?.map((item) => (
                   <div
                     key={item.id}
                     style={{
                       backgroundColor: "#FFFDF9",
-                      borderRadius: "16px",
+                      borderRadius: "14px",
                       border: "1px solid var(--gold-border)",
-                      padding: "14px",
+                      padding: "12px 16px",
                       display: "flex",
-                      gap: "14px",
                       alignItems: "center",
+                      justifyContent: "space-between",
+                      gap: "12px",
                       boxShadow: "0 2px 6px rgba(75, 23, 14, 0.03)"
                     }}
                   >
-                    {/* Item Thumbnail */}
-                    <div
-                      style={{
-                        width: "64px",
-                        height: "64px",
-                        borderRadius: "10px",
-                        backgroundColor: "#FAF6EE",
-                        overflow: "hidden",
-                        flexShrink: 0,
-                        border: "1px solid rgba(172, 132, 75, 0.2)",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center"
-                      }}
-                    >
-                      {item.imageUrl ? (
-                        <img
-                          src={item.imageUrl}
-                          alt={item.name}
-                          style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                        />
-                      ) : (
-                        <span style={{ fontSize: "18px" }}>🍽️</span>
-                      )}
-                    </div>
-
-                    {/* Dish Info */}
-                    <div style={{ flex: 1, minWidth: 0 }}>
-                      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "8px" }}>
-                        <h4
-                          style={{
-                            fontFamily: "var(--font-heading)",
-                            fontSize: "15px",
-                            fontWeight: 700,
-                            color: "var(--text)",
-                            margin: 0,
-                            overflow: "hidden",
-                            textOverflow: "ellipsis",
-                            whiteSpace: "nowrap"
-                          }}
-                        >
-                          {item.name}
-                        </h4>
-                        <span
-                          style={{
-                            fontFamily: "var(--font-heading)",
-                            fontSize: "15px",
-                            fontWeight: 700,
-                            color: "var(--gold-dark)"
-                          }}
-                        >
-                          ₹{item.price}
-                        </span>
-                      </div>
-
-                      {item.description && (
-                        <p
-                          style={{
-                            fontFamily: "var(--font-body)",
-                            fontSize: "12.5px",
-                            color: "var(--muted)",
-                            margin: "4px 0 0",
-                            lineHeight: 1.35,
-                            overflow: "hidden",
-                            display: "-webkit-box",
-                            WebkitLineClamp: 2,
-                            WebkitBoxOrient: "vertical"
-                          }}
-                        >
-                          {item.description}
-                        </p>
-                      )}
+                    {/* Left: Dish Name & Type Badge */}
+                    <div style={{ display: "flex", alignItems: "center", gap: "10px", minWidth: 0 }}>
+                      <h4
+                        style={{
+                          fontFamily: "var(--font-heading)",
+                          fontSize: "15px",
+                          fontWeight: 700,
+                          color: "var(--text)",
+                          margin: 0,
+                          overflow: "hidden",
+                          textOverflow: "ellipsis",
+                          whiteSpace: "nowrap"
+                        }}
+                      >
+                        {item.name}
+                      </h4>
 
                       {!isGround && (
-                        <div style={{ marginTop: "6px" }}>
-                          <span
-                            style={{
-                              fontSize: "10.5px",
-                              padding: "2px 6px",
-                              borderRadius: "4px",
-                              backgroundColor:
-                                item.type === "veg"
-                                  ? "#DCFCE7"
-                                  : item.type === "nonveg"
-                                  ? "#FEE2E2"
-                                  : "#FEF3C7",
-                              color:
-                                item.type === "veg"
-                                  ? "#166534"
-                                  : item.type === "nonveg"
-                                  ? "#991B1B"
-                                  : "#92400E",
-                              fontWeight: 700
-                            }}
-                          >
-                            {item.type === "veg"
-                              ? "🟢 Veg"
-                              : item.type === "nonveg"
-                              ? "🔴 Non-Veg"
-                              : "🍸 Bar"}
-                          </span>
-                        </div>
+                        <span
+                          style={{
+                            fontSize: "11px",
+                            padding: "2px 8px",
+                            borderRadius: "6px",
+                            backgroundColor:
+                              item.type === "veg"
+                                ? "#DCFCE7"
+                                : item.type === "nonveg"
+                                ? "#FEE2E2"
+                                : "#FEF3C7",
+                            color:
+                              item.type === "veg"
+                                ? "#166534"
+                                : item.type === "nonveg"
+                                ? "#991B1B"
+                                : "#92400E",
+                            fontWeight: 700,
+                            flexShrink: 0
+                          }}
+                        >
+                          {item.type === "veg"
+                            ? "🟢 Veg"
+                            : item.type === "nonveg"
+                            ? "🔴 Non-Veg"
+                            : "🍸 Bar"}
+                        </span>
                       )}
                     </div>
+
+                    {/* Right: Price */}
+                    <span
+                      style={{
+                        fontFamily: "var(--font-heading)",
+                        fontSize: "15.5px",
+                        fontWeight: 700,
+                        color: "var(--gold-dark)",
+                        flexShrink: 0
+                      }}
+                    >
+                      ₹{item.price}
+                    </span>
                   </div>
                 ))}
               </div>

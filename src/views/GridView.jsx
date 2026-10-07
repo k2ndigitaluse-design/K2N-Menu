@@ -113,14 +113,19 @@ export function GridView() {
                 </h3>
               </div>
 
-              {/* Price */}
+              {/* Price: Bold Yellow on Red Pill */}
               <div
                 style={{
-                  fontFamily: "var(--font-heading)",
+                  backgroundColor: "var(--red)",
+                  color: "var(--yellow)",
+                  fontFamily: "var(--font-body)",
                   fontSize: "14px",
-                  fontWeight: 700,
-                  color: "var(--gold-start)",
-                  flexShrink: 0
+                  fontWeight: 800,
+                  padding: "3px 8px",
+                  borderRadius: "7px",
+                  boxShadow: "0 2px 6px rgba(0, 0, 0, 0.25)",
+                  flexShrink: 0,
+                  letterSpacing: "0.3px"
                 }}
               >
                 {currency}{displayPrice}

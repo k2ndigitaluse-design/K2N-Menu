@@ -180,6 +180,25 @@ export function MenuProvider({ children, initialFloor = "ground" }) {
     }
   }, [displayedItems.length, selectedDishIndex]);
 
+  // Navigation helpers for sideways category switching
+  const goToNextCategory = useCallback(() => {
+    if (!visibleCategories || visibleCategories.length === 0) return;
+    const currentIdx = visibleCategories.findIndex((c) => c.id === selectedCategory);
+    if (currentIdx !== -1 && currentIdx < visibleCategories.length - 1) {
+      setSelectedCategory(visibleCategories[currentIdx + 1].id);
+      setSelectedDishIndex(0);
+    }
+  }, [visibleCategories, selectedCategory]);
+
+  const goToPrevCategory = useCallback(() => {
+    if (!visibleCategories || visibleCategories.length === 0) return;
+    const currentIdx = visibleCategories.findIndex((c) => c.id === selectedCategory);
+    if (currentIdx > 0) {
+      setSelectedCategory(visibleCategories[currentIdx - 1].id);
+      setSelectedDishIndex(0);
+    }
+  }, [visibleCategories, selectedCategory]);
+
   const value = {
     brand,
     floorsConfig,
@@ -191,6 +210,8 @@ export function MenuProvider({ children, initialFloor = "ground" }) {
     selectedCategory,
     setSelectedCategory,
     visibleCategories,
+    goToNextCategory,
+    goToPrevCategory,
     rawMenu,
     displayedItems,
     viewMode,

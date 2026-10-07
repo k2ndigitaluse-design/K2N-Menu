@@ -3,8 +3,30 @@ import { useMenu } from "../context/MenuContext.jsx";
 import SmartImage from "../components/SmartImage.jsx";
 
 export function ListView() {
-  const { displayedItems, setViewMode, setSelectedDishIndex, brand } = useMenu();
+  const { displayedItems, setViewMode, setSelectedDishIndex, brand, goToNextCategory, goToPrevCategory } = useMenu();
   const currency = brand?.currency || "₹";
+
+  const touchStartRef = React.useRef({ x: 0, y: 0 });
+
+  const handleTouchStart = (e) => {
+    const touch = e.touches[0];
+    touchStartRef.current = { x: touch.clientX, y: touch.clientY };
+  };
+
+  const handleTouchEnd = (e) => {
+    if (!e.changedTouches || e.changedTouches.length === 0) return;
+    const touch = e.changedTouches[0];
+    const deltaX = touch.clientX - touchStartRef.current.x;
+    const deltaY = touch.clientY - touchStartRef.current.y;
+
+    if (Math.abs(deltaX) > 45 && Math.abs(deltaX) > Math.abs(deltaY) * 1.3) {
+      if (deltaX < 0) {
+        goToNextCategory();
+      } else {
+        goToPrevCategory();
+      }
+    }
+  };
 
   const handleRowClick = (index) => {
     setSelectedDishIndex(index);
@@ -13,7 +35,11 @@ export function ListView() {
 
   if (!displayedItems || displayedItems.length === 0) {
     return (
-      <div style={{ padding: "48px 16px", textAlign: "center", color: "var(--muted)" }}>
+      <div
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+        style={{ padding: "48px 16px", textAlign: "center", color: "var(--muted)", flex: 1 }}
+      >
         <p style={{ fontSize: "16px", fontWeight: 500 }}>No items available</p>
       </div>
     );
@@ -22,6 +48,8 @@ export function ListView() {
   return (
     <div
       className="list-view"
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
       style={{
         display: "flex",
         flexDirection: "column",
@@ -129,13 +157,17 @@ export function ListView() {
             {/* Right: Price */}
             <div
               style={{
-                fontFamily: "var(--font-heading)",
-                fontSize: "16px",
-                fontWeight: 700,
-                color: "var(--gold-start)",
+                backgroundColor: "var(--red)",
+                color: "var(--yellow)",
+                fontFamily: "var(--font-body)",
+                fontSize: "15px",
+                fontWeight: 800,
+                padding: "4px 10px",
+                borderRadius: "8px",
+                boxShadow: "0 2px 6px rgba(0, 0, 0, 0.25)",
                 flexShrink: 0,
                 marginLeft: "auto",
-                paddingLeft: "8px"
+                letterSpacing: "0.4px"
               }}
             >
               {currency}{displayPrice}

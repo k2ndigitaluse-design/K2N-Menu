@@ -73,30 +73,30 @@ export function SmartImage({
             alignItems: "center",
             justifyContent: "center",
             background: "linear-gradient(135deg, #FAF6EF 0%, #EDE4D3 100%)",
-            padding: "8px",
+            padding: "10px",
             border: "1px solid rgba(172, 132, 75, 0.15)",
-            boxSizing: "border-box"
+            boxSizing: "border-box",
+            gap: "4px"
           }}
         >
           <img
             src="/assets/logo.png"
             alt="K2N"
             style={{
-              maxHeight: "45%",
-              maxWidth: "65%",
+              maxHeight: "58%",
+              maxWidth: "75%",
               objectFit: "contain",
-              opacity: 0.85,
-              filter: "drop-shadow(0 2px 4px rgba(172, 132, 75, 0.2))"
+              opacity: 0.95,
+              filter: "drop-shadow(0 3px 6px rgba(172, 132, 75, 0.25))"
             }}
           />
           <span
             style={{
-              fontSize: "10px",
+              fontSize: "13px",
               fontFamily: "var(--font-heading)",
-              color: "var(--gold-start)",
-              fontWeight: 700,
-              letterSpacing: "1.5px",
-              marginTop: "4px",
+              color: "var(--red)",
+              fontWeight: 800,
+              letterSpacing: "2.5px",
               textTransform: "uppercase"
             }}
           >
