@@ -89,14 +89,33 @@ export async function getMenu(floorId = "ground") {
       return localSample;
     }
 
+    const sampleFloorList = sampleMenus[floorId] || [];
+    const sampleImageMap = new Map();
+    for (const cat of sampleFloorList) {
+      if (Array.isArray(cat.items)) {
+        for (const item of cat.items) {
+          if (item.imageUrl) {
+            sampleImageMap.set(item.id, item.imageUrl);
+            sampleImageMap.set(item.name.toLowerCase().trim(), item.imageUrl);
+          }
+        }
+      }
+    }
+
     const categories = [];
     snapshot.forEach((docSnap) => {
       const data = docSnap.data();
+      const rawItems = Array.isArray(data.items) ? data.items : [];
+      const items = rawItems.map((item) => ({
+        ...item,
+        imageUrl: item.imageUrl || sampleImageMap.get(item.id) || sampleImageMap.get(item.name?.toLowerCase().trim()) || ""
+      }));
+
       categories.push({
         id: docSnap.id,
         name: data.name || "Untitled Category",
         order: Number(data.order) || 0,
-        items: Array.isArray(data.items) ? data.items : []
+        items
       });
     });
 

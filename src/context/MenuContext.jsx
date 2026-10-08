@@ -128,6 +128,20 @@ export function MenuProvider({ children, initialFloor = "ground" }) {
   const floorItems = useMemo(() => {
     if (!activeFloorConfig || !Array.isArray(rawMenu)) return [];
 
+    // Fallback sample image map
+    const sampleFloorList = sampleMenus[floorId] || [];
+    const sampleImageMap = new Map();
+    for (const cat of sampleFloorList) {
+      if (Array.isArray(cat.items)) {
+        for (const it of cat.items) {
+          if (it.imageUrl) {
+            sampleImageMap.set(it.id, it.imageUrl);
+            sampleImageMap.set(it.name.toLowerCase().trim(), it.imageUrl);
+          }
+        }
+      }
+    }
+
     const items = [];
     for (const cat of rawMenu) {
       if (!cat.items || !Array.isArray(cat.items)) continue;
@@ -138,8 +152,11 @@ export function MenuProvider({ children, initialFloor = "ground" }) {
         // Match selected dietary type (veg, nonveg, or bar)
         if (item.type !== selectedType) continue;
 
+        const imageUrl = item.imageUrl || sampleImageMap.get(item.id) || sampleImageMap.get(item.name?.toLowerCase().trim()) || "";
+
         items.push({
           ...item,
+          imageUrl,
           category: cat.id,
           categoryName: cat.name,
           effectivePrice: Number(item.price) || 0
