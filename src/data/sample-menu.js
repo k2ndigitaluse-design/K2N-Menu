@@ -41,7 +41,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 189,
         "type": "nonveg",
-        "imageUrl": ""
+        "imageUrl": "/assets/images/triple_chicken_fried_rice.jpg"
       },
       {
         "id": "g-dish-5-homemade-chicken-rice",
@@ -317,7 +317,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 199,
         "type": "veg",
-        "imageUrl": "/assets/images/paneer_tikka.jpg"
+        "imageUrl": "/assets/images/paneer_tikka_real.jpg"
       },
       {
         "id": "g-dish-36-veg-shole-kabab",
@@ -357,7 +357,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 199,
         "type": "veg",
-        "imageUrl": ""
+        "imageUrl": "/assets/images/paneer_tikka_real.jpg"
       },
       {
         "id": "g-dish-41-paneer-multhani",
@@ -380,7 +380,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 489,
         "type": "nonveg",
-        "imageUrl": ""
+        "imageUrl": "/assets/images/chicken_tandoori.jpg"
       },
       {
         "id": "g-dish-43-chicken-tandoori-half",
@@ -388,7 +388,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 279,
         "type": "nonveg",
-        "imageUrl": ""
+        "imageUrl": "/assets/images/chicken_tandoori.jpg"
       },
       {
         "id": "g-dish-44-chicken-pahadi-kabab",
@@ -396,7 +396,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 299,
         "type": "nonveg",
-        "imageUrl": ""
+        "imageUrl": "/assets/images/chicken_pahadi_tandoori.jpg"
       },
       {
         "id": "g-dish-45-chicken-kolhapuri-kabab",
@@ -420,7 +420,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 299,
         "type": "nonveg",
-        "imageUrl": ""
+        "imageUrl": "/assets/images/chicken_reshmi_malai.jpg"
       },
       {
         "id": "g-dish-48-chicken-achari-kabab",
@@ -436,7 +436,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 299,
         "type": "nonveg",
-        "imageUrl": "/assets/images/chicken_tikka.jpg"
+        "imageUrl": "/assets/images/chicken_pahadi_tikka.jpg"
       },
       {
         "id": "g-dish-50-chicken-oum-kabab",
@@ -468,7 +468,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 299,
         "type": "nonveg",
-        "imageUrl": ""
+        "imageUrl": "/assets/images/chicken_tangdi_kabab.jpg"
       },
       {
         "id": "g-dish-54-chicken-sheekh-kabab",
@@ -627,7 +627,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 379,
         "type": "nonveg",
-        "imageUrl": ""
+        "imageUrl": "/assets/images/k2n_special_kebab.jpg"
       },
       {
         "id": "g-dish-73-chicken-jafrani-tikka",
@@ -635,7 +635,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 379,
         "type": "nonveg",
-        "imageUrl": ""
+        "imageUrl": "/assets/images/nonveg_tandoori_platter.jpg"
       },
       {
         "id": "g-dish-74-chicken-crispy",
@@ -880,7 +880,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 149,
         "type": "veg",
-        "imageUrl": ""
+        "imageUrl": "/assets/images/soup_manchow.jpg"
       },
       {
         "id": "g-dish-102-tomato-soup",
@@ -904,7 +904,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 199,
         "type": "nonveg",
-        "imageUrl": ""
+        "imageUrl": "/assets/images/soup_manchow.jpg"
       },
       {
         "id": "g-dish-105-mutton-soup",
@@ -1150,7 +1150,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 249,
         "type": "nonveg",
-        "imageUrl": ""
+        "imageUrl": "/assets/images/paneer_pepper_dry.jpg"
       },
       {
         "id": "g-dish-134-mutton-pepper-dry",
@@ -1514,7 +1514,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 319,
         "type": "nonveg",
-        "imageUrl": ""
+        "imageUrl": "/assets/images/chicken_rara.jpg"
       },
       {
         "id": "g-dish-176-chicken-maharaja",
@@ -1943,7 +1943,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 209,
         "type": "nonveg",
-        "imageUrl": ""
+        "imageUrl": "/assets/images/triple_chicken_fried_rice.jpg"
       },
       {
         "id": "t-dish-5-homemade-chicken-rice",
@@ -2219,7 +2219,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 219,
         "type": "veg",
-        "imageUrl": "/assets/images/paneer_tikka.jpg"
+        "imageUrl": "/assets/images/paneer_tikka_real.jpg"
       },
       {
         "id": "t-dish-36-veg-shole-kabab",
@@ -2259,7 +2259,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 219,
         "type": "veg",
-        "imageUrl": ""
+        "imageUrl": "/assets/images/paneer_tikka_real.jpg"
       },
       {
         "id": "t-dish-41-paneer-multhani",
@@ -2282,7 +2282,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 509,
         "type": "nonveg",
-        "imageUrl": ""
+        "imageUrl": "/assets/images/chicken_tandoori.jpg"
       },
       {
         "id": "t-dish-43-chicken-tandoori-half",
@@ -2290,7 +2290,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 299,
         "type": "nonveg",
-        "imageUrl": ""
+        "imageUrl": "/assets/images/chicken_tandoori.jpg"
       },
       {
         "id": "t-dish-44-chicken-pahadi-kabab",
@@ -2298,7 +2298,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 319,
         "type": "nonveg",
-        "imageUrl": ""
+        "imageUrl": "/assets/images/chicken_pahadi_tandoori.jpg"
       },
       {
         "id": "t-dish-45-chicken-kolhapuri-kabab",
@@ -2322,7 +2322,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 319,
         "type": "nonveg",
-        "imageUrl": ""
+        "imageUrl": "/assets/images/chicken_reshmi_malai.jpg"
       },
       {
         "id": "t-dish-48-chicken-achari-kabab",
@@ -2338,7 +2338,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 319,
         "type": "nonveg",
-        "imageUrl": "/assets/images/chicken_tikka.jpg"
+        "imageUrl": "/assets/images/chicken_pahadi_tikka.jpg"
       },
       {
         "id": "t-dish-50-chicken-oum-kabab",
@@ -2370,7 +2370,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 319,
         "type": "nonveg",
-        "imageUrl": ""
+        "imageUrl": "/assets/images/chicken_tangdi_kabab.jpg"
       },
       {
         "id": "t-dish-54-chicken-sheekh-kabab",
@@ -2529,7 +2529,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 399,
         "type": "nonveg",
-        "imageUrl": ""
+        "imageUrl": "/assets/images/k2n_special_kebab.jpg"
       },
       {
         "id": "t-dish-73-chicken-jafrani-tikka",
@@ -2537,7 +2537,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 399,
         "type": "nonveg",
-        "imageUrl": ""
+        "imageUrl": "/assets/images/nonveg_tandoori_platter.jpg"
       },
       {
         "id": "t-dish-74-chicken-crispy",
@@ -2782,7 +2782,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 169,
         "type": "veg",
-        "imageUrl": ""
+        "imageUrl": "/assets/images/soup_manchow.jpg"
       },
       {
         "id": "t-dish-102-tomato-soup",
@@ -2806,7 +2806,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 219,
         "type": "nonveg",
-        "imageUrl": ""
+        "imageUrl": "/assets/images/soup_manchow.jpg"
       },
       {
         "id": "t-dish-105-mutton-soup",
@@ -3052,7 +3052,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 269,
         "type": "nonveg",
-        "imageUrl": ""
+        "imageUrl": "/assets/images/paneer_pepper_dry.jpg"
       },
       {
         "id": "t-dish-134-mutton-pepper-dry",
@@ -3416,7 +3416,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 339,
         "type": "nonveg",
-        "imageUrl": ""
+        "imageUrl": "/assets/images/chicken_rara.jpg"
       },
       {
         "id": "t-dish-176-chicken-maharaja",
