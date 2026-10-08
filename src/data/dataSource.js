@@ -83,9 +83,10 @@ export async function getMenu(floorId = "ground") {
     const snapshot = await getDocs(categoriesRef);
 
     if (snapshot.empty) {
-      // Return empty array (will trigger "Menu coming soon" or allow import)
-      saveToCache(cacheKey, []);
-      return [];
+      // Fallback to rich sample menu if Firestore collection has no documents yet
+      const localSample = sampleMenus[floorId] || [];
+      saveToCache(cacheKey, localSample);
+      return localSample;
     }
 
     const categories = [];
@@ -106,12 +107,12 @@ export async function getMenu(floorId = "ground") {
     saveToCache(cacheKey, categories);
     return categories;
   } catch (err) {
-    console.error(`[dataSource] Error fetching menu for floor ${floorId}:`, err);
+    console.warn(`[dataSource] Error fetching from Firestore for floor ${floorId}, using fallback:`, err);
     const cached = getFromCache(cacheKey);
-    if (cached !== null) {
+    if (cached !== null && cached.length > 0) {
       return cached;
     }
-    throw err;
+    return sampleMenus[floorId] || [];
   }
 }
 
@@ -136,7 +137,7 @@ export async function saveCategory(floorId, categoryId, categoryData) {
       name: item.name.trim(),
       description: (item.description || "").trim(),
       price: Number(item.price) || 0,
-      type: floorId === "ground" ? "veg" : (item.type || "veg"),
+      type: item.type || "veg",
       imageUrl: item.imageUrl || ""
     }))
   };
