@@ -103,16 +103,26 @@ export async function getMenu(floorId = "ground") {
     // In-memory sort by 'order'
     categories.sort((a, b) => a.order - b.order);
 
+    const totalItemsCount = categories.reduce((sum, c) => sum + (c.items?.length || 0), 0);
+    if (categories.length === 0 || totalItemsCount === 0) {
+      const localSample = sampleMenus[floorId] || [];
+      saveToCache(cacheKey, localSample);
+      return localSample;
+    }
+
     // Cache the result
     saveToCache(cacheKey, categories);
     return categories;
   } catch (err) {
     console.warn(`[dataSource] Error fetching from Firestore for floor ${floorId}, using fallback:`, err);
     const cached = getFromCache(cacheKey);
-    if (cached !== null && cached.length > 0) {
+    const totalCachedItems = Array.isArray(cached) ? cached.reduce((sum, c) => sum + (c.items?.length || 0), 0) : 0;
+    if (cached !== null && Array.isArray(cached) && totalCachedItems > 0) {
       return cached;
     }
-    return sampleMenus[floorId] || [];
+    const localSample = sampleMenus[floorId] || [];
+    saveToCache(cacheKey, localSample);
+    return localSample;
   }
 }
 

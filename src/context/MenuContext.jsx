@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect, useMemo, useCallback } from "react";
 import { getBrand, getFloors, getMenu, getFromCache } from "../data/dataSource.js";
+import { sampleMenus } from "../data/sample-menu.js";
 import { isItemVisibleOnFloor } from "../data/visibleItems.js";
 
 const MenuContext = createContext(null);
@@ -32,9 +33,12 @@ export function MenuProvider({ children, initialFloor = "ground" }) {
 
   // Raw menu categories for current floor
   const [rawMenu, setRawMenu] = useState(() => {
-    return getFromCache(`${STORAGE_KEYS.MENU_PREFIX}${initialFloor}`) || [];
+    const cached = getFromCache(`${STORAGE_KEYS.MENU_PREFIX}${initialFloor}`);
+    const count = Array.isArray(cached) ? cached.reduce((sum, c) => sum + (c.items?.length || 0), 0) : 0;
+    if (count > 0) return cached;
+    return sampleMenus[initialFloor] || [];
   });
-  const [loading, setLoading] = useState(rawMenu.length === 0);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
   // Type filter: both floors can be "veg" | "nonveg" | "bar"
@@ -61,13 +65,13 @@ export function MenuProvider({ children, initialFloor = "ground" }) {
     setSelectedCategory("all");
     setSelectedDishIndex(0);
 
-    // Instant load from cache if available
+    // Instant load from cache if available and has items
     const cached = getFromCache(`${STORAGE_KEYS.MENU_PREFIX}${newFloor}`);
-    if (cached) {
+    const count = Array.isArray(cached) ? cached.reduce((sum, c) => sum + (c.items?.length || 0), 0) : 0;
+    if (count > 0) {
       setRawMenu(cached);
-      setLoading(false);
     } else {
-      setLoading(true);
+      setRawMenu(sampleMenus[newFloor] || []);
     }
   }, []);
 
@@ -93,13 +97,17 @@ export function MenuProvider({ children, initialFloor = "ground" }) {
       ]);
       setBrand(brandRes);
       setFloorsConfig(floorsRes);
-      setRawMenu(menuRes);
+      if (Array.isArray(menuRes) && menuRes.length > 0) {
+        setRawMenu(menuRes);
+      } else {
+        setRawMenu(sampleMenus[targetFloor] || []);
+      }
       setError(null);
     } catch (err) {
       console.error(`[MenuContext] Error fetching menu for ${targetFloor}:`, err);
       const cached = getFromCache(`${STORAGE_KEYS.MENU_PREFIX}${targetFloor}`);
       if (!cached || cached.length === 0) {
-        setError("Menu is loading, please refresh");
+        setRawMenu(sampleMenus[targetFloor] || []);
       }
     } finally {
       setLoading(false);
@@ -155,6 +163,13 @@ export function MenuProvider({ children, initialFloor = "ground" }) {
 
     return [{ id: "all", name: "All" }, ...list];
   }, [rawMenu, floorItems]);
+
+  // Reset selectedCategory to "all" if current category is no longer valid under new filter
+  useEffect(() => {
+    if (selectedCategory !== "all" && !visibleCategories.some((c) => c.id === selectedCategory)) {
+      setSelectedCategory("all");
+    }
+  }, [visibleCategories, selectedCategory]);
 
   // Final items filtered by selected category
   const displayedItems = useMemo(() => {
