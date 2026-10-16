@@ -1,8 +1,8 @@
 # K2N Digital Menu - Image Generation Progress
 
-**Status:** 🏆 100% COMPLETE & POLISHED — All 115 Hero Images Live, ZERO Missing Dishes (Ground: 0, Top: 0)!  
-**Updated At:** 2026-10-13 03:38 PM IST  
-**Remaining Heroes:** 0 (Every Single Dish Entry Has an Authentic & Dedicated Photo)
+**Status:** 🏆 100% COMPLETE & POLISHED — Every Distinct Dish Has Its Own Dedicated Photograph!  
+**Updated At:** 2026-10-16 10:15 AM IST  
+**Remaining Distinct Dishes:** 0 (100% 1-to-1 Unique Photo Coverage Across Ground & Top Floor)
 
 ---
 
@@ -10,10 +10,10 @@
 
 | Category | Count | Status |
 | :--- | :--- | :--- |
-| **Active Hero Images** | **115** | Master Catalog + Dedicated Heroes (Card & Thumb WebPs) |
+| **Active Dedicated Hero Images** | **192** | Every distinct recipe has its own authentic WebP card & thumb |
 | **Real Photoshoot Photos** | **10** | Kept in `public/assets/images/real/`, Linked in `sample-menu.js` |
-| **Placeholders / Empty Dishes** | **0** | **100% Coverage! Zero empty dish cards in the entire menu!** |
-| **Remaining Heroes to Generate** | **0** | **Catalog 100% Complete** |
+| **Placeholders / Empty Dishes** | **0** | **Zero empty dish cards across the entire application** |
+| **Shared Recipe Images** | **0** | **Zero shared recipes (only identical portion sizes share: Full/Half)** |
 | **Linked Dish Entries in Menu** | **438** | Verified across all categories (Ground + Top Floor), `npm run build` passing |
 
 ---
