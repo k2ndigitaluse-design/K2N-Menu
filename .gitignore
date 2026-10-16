@@ -36,6 +36,7 @@ dist-ssr
 # Raw image archives & HD master assets (not for production git)
 /Dishes_Images_Raw_Data/
 /source-images/
+/user-generated-hd/
 public/assets/images/user-generated/
 
 # Scratch & temporary development files

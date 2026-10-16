@@ -101,7 +101,7 @@ export function ListView() {
               }}
             >
               <SmartImage
-                src={dish.imageUrl}
+                src={dish.thumbUrl || (dish.imageUrl ? dish.imageUrl.replace("-card.webp", "-thumb.webp") : "")}
                 alt={dish.name}
                 targetWidth={200}
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
