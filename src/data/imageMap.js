@@ -3609,15 +3609,15 @@ export const dishImageMap = {
     "type": "GENERATED"
   },
   "g-dish-14-naan-plain": {
-    "heroId": "hero-butter-naan",
-    "card": "/assets/images/hero/hero-butter-naan-card.webp",
-    "thumb": "/assets/images/hero/hero-butter-naan-thumb.webp",
+    "heroId": "hero-naan-plain",
+    "card": "/assets/images/hero/hero-naan-plain-card.webp",
+    "thumb": "/assets/images/hero/hero-naan-plain-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-14-naan-plain": {
-    "heroId": "hero-butter-naan",
-    "card": "/assets/images/hero/hero-butter-naan-card.webp",
-    "thumb": "/assets/images/hero/hero-butter-naan-thumb.webp",
+    "heroId": "hero-naan-plain",
+    "card": "/assets/images/hero/hero-naan-plain-card.webp",
+    "thumb": "/assets/images/hero/hero-naan-plain-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-15-butter-naan": {
@@ -3657,27 +3657,27 @@ export const dishImageMap = {
     "type": "GENERATED"
   },
   "g-dish-17-butter-kulcha": {
-    "heroId": "hero-kulcha",
-    "card": "/assets/images/hero/hero-kulcha-card.webp",
-    "thumb": "/assets/images/hero/hero-kulcha-thumb.webp",
+    "heroId": "hero-butter-kulcha",
+    "card": "/assets/images/hero/hero-butter-kulcha-card.webp",
+    "thumb": "/assets/images/hero/hero-butter-kulcha-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-17-butter-kulcha": {
-    "heroId": "hero-kulcha",
-    "card": "/assets/images/hero/hero-kulcha-card.webp",
-    "thumb": "/assets/images/hero/hero-kulcha-thumb.webp",
+    "heroId": "hero-butter-kulcha",
+    "card": "/assets/images/hero/hero-butter-kulcha-card.webp",
+    "thumb": "/assets/images/hero/hero-butter-kulcha-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-25-onion-kulcha": {
-    "heroId": "hero-kulcha",
-    "card": "/assets/images/hero/hero-kulcha-card.webp",
-    "thumb": "/assets/images/hero/hero-kulcha-thumb.webp",
+    "heroId": "hero-onion-kulcha",
+    "card": "/assets/images/hero/hero-onion-kulcha-card.webp",
+    "thumb": "/assets/images/hero/hero-onion-kulcha-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-25-onion-kulcha": {
-    "heroId": "hero-kulcha",
-    "card": "/assets/images/hero/hero-kulcha-card.webp",
-    "thumb": "/assets/images/hero/hero-kulcha-thumb.webp",
+    "heroId": "hero-onion-kulcha",
+    "card": "/assets/images/hero/hero-onion-kulcha-card.webp",
+    "thumb": "/assets/images/hero/hero-onion-kulcha-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-23-stuffed-paratha": {
@@ -3693,15 +3693,15 @@ export const dishImageMap = {
     "type": "GENERATED"
   },
   "g-dish-26-onion-paratha": {
-    "heroId": "hero-paratha",
-    "card": "/assets/images/hero/hero-paratha-card.webp",
-    "thumb": "/assets/images/hero/hero-paratha-thumb.webp",
+    "heroId": "hero-onion-paratha",
+    "card": "/assets/images/hero/hero-onion-paratha-card.webp",
+    "thumb": "/assets/images/hero/hero-onion-paratha-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-26-onion-paratha": {
-    "heroId": "hero-paratha",
-    "card": "/assets/images/hero/hero-paratha-card.webp",
-    "thumb": "/assets/images/hero/hero-paratha-thumb.webp",
+    "heroId": "hero-onion-paratha",
+    "card": "/assets/images/hero/hero-onion-paratha-card.webp",
+    "thumb": "/assets/images/hero/hero-onion-paratha-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-24-lacha-paratha": {
@@ -3729,15 +3729,15 @@ export const dishImageMap = {
     "type": "GENERATED"
   },
   "g-dish-22-chicken-keema-naan": {
-    "heroId": "hero-keema-naan",
-    "card": "/assets/images/hero/hero-keema-naan-card.webp",
-    "thumb": "/assets/images/hero/hero-keema-naan-thumb.webp",
+    "heroId": "hero-chicken-keema-naan",
+    "card": "/assets/images/hero/hero-chicken-keema-naan-card.webp",
+    "thumb": "/assets/images/hero/hero-chicken-keema-naan-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-22-chicken-keema-naan": {
-    "heroId": "hero-keema-naan",
-    "card": "/assets/images/hero/hero-keema-naan-card.webp",
-    "thumb": "/assets/images/hero/hero-keema-naan-thumb.webp",
+    "heroId": "hero-chicken-keema-naan",
+    "card": "/assets/images/hero/hero-chicken-keema-naan-card.webp",
+    "thumb": "/assets/images/hero/hero-chicken-keema-naan-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-27-tandoori-fish": {
@@ -3777,27 +3777,27 @@ export const dishImageMap = {
     "type": "GENERATED"
   },
   "g-dish-31-bangda-rava-fry": {
-    "heroId": "hero-bangda-fry",
-    "card": "/assets/images/hero/hero-bangda-fry-card.webp",
-    "thumb": "/assets/images/hero/hero-bangda-fry-thumb.webp",
+    "heroId": "hero-bangda-rava-fry",
+    "card": "/assets/images/hero/hero-bangda-rava-fry-card.webp",
+    "thumb": "/assets/images/hero/hero-bangda-rava-fry-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-31-bangda-rava-fry": {
-    "heroId": "hero-bangda-fry",
-    "card": "/assets/images/hero/hero-bangda-fry-card.webp",
-    "thumb": "/assets/images/hero/hero-bangda-fry-thumb.webp",
+    "heroId": "hero-bangda-rava-fry",
+    "card": "/assets/images/hero/hero-bangda-rava-fry-card.webp",
+    "thumb": "/assets/images/hero/hero-bangda-rava-fry-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-32-bangda-tawa-fry": {
-    "heroId": "hero-bangda-fry",
-    "card": "/assets/images/hero/hero-bangda-fry-card.webp",
-    "thumb": "/assets/images/hero/hero-bangda-fry-thumb.webp",
+    "heroId": "hero-bangda-tawa-fry",
+    "card": "/assets/images/hero/hero-bangda-tawa-fry-card.webp",
+    "thumb": "/assets/images/hero/hero-bangda-tawa-fry-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-32-bangda-tawa-fry": {
-    "heroId": "hero-bangda-fry",
-    "card": "/assets/images/hero/hero-bangda-fry-card.webp",
-    "thumb": "/assets/images/hero/hero-bangda-fry-thumb.webp",
+    "heroId": "hero-bangda-tawa-fry",
+    "card": "/assets/images/hero/hero-bangda-tawa-fry-card.webp",
+    "thumb": "/assets/images/hero/hero-bangda-tawa-fry-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-33-kaatla-rava-fry": {
@@ -3813,15 +3813,15 @@ export const dishImageMap = {
     "type": "GENERATED"
   },
   "g-dish-34-kaatla-tawa-fry": {
-    "heroId": "hero-kaatla-fry",
-    "card": "/assets/images/hero/hero-kaatla-fry-card.webp",
-    "thumb": "/assets/images/hero/hero-kaatla-fry-thumb.webp",
+    "heroId": "hero-kaatla-tawa-fry",
+    "card": "/assets/images/hero/hero-kaatla-tawa-fry-card.webp",
+    "thumb": "/assets/images/hero/hero-kaatla-tawa-fry-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-34-kaatla-tawa-fry": {
-    "heroId": "hero-kaatla-fry",
-    "card": "/assets/images/hero/hero-kaatla-fry-card.webp",
-    "thumb": "/assets/images/hero/hero-kaatla-fry-thumb.webp",
+    "heroId": "hero-kaatla-tawa-fry",
+    "card": "/assets/images/hero/hero-kaatla-tawa-fry-card.webp",
+    "thumb": "/assets/images/hero/hero-kaatla-tawa-fry-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-39-paneer-malai-tikka": {
@@ -4653,27 +4653,27 @@ export const dishImageMap = {
     "type": "GENERATED"
   },
   "g-dish-135-guntoor-mutton-dry": {
-    "heroId": "hero-mutton-dry",
-    "card": "/assets/images/hero/hero-mutton-dry-card.webp",
-    "thumb": "/assets/images/hero/hero-mutton-dry-thumb.webp",
+    "heroId": "hero-guntoor-mutton-dry",
+    "card": "/assets/images/hero/hero-guntoor-mutton-dry-card.webp",
+    "thumb": "/assets/images/hero/hero-guntoor-mutton-dry-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-135-guntoor-mutton-dry": {
-    "heroId": "hero-mutton-dry",
-    "card": "/assets/images/hero/hero-mutton-dry-card.webp",
-    "thumb": "/assets/images/hero/hero-mutton-dry-thumb.webp",
+    "heroId": "hero-guntoor-mutton-dry",
+    "card": "/assets/images/hero/hero-guntoor-mutton-dry-card.webp",
+    "thumb": "/assets/images/hero/hero-guntoor-mutton-dry-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-136-chilli-mutton-dry": {
-    "heroId": "hero-mutton-dry",
-    "card": "/assets/images/hero/hero-mutton-dry-card.webp",
-    "thumb": "/assets/images/hero/hero-mutton-dry-thumb.webp",
+    "heroId": "hero-chilli-mutton-dry",
+    "card": "/assets/images/hero/hero-chilli-mutton-dry-card.webp",
+    "thumb": "/assets/images/hero/hero-chilli-mutton-dry-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-136-chilli-mutton-dry": {
-    "heroId": "hero-mutton-dry",
-    "card": "/assets/images/hero/hero-mutton-dry-card.webp",
-    "thumb": "/assets/images/hero/hero-mutton-dry-thumb.webp",
+    "heroId": "hero-chilli-mutton-dry",
+    "card": "/assets/images/hero/hero-chilli-mutton-dry-card.webp",
+    "thumb": "/assets/images/hero/hero-chilli-mutton-dry-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-101-hot-and-sour-soup": {

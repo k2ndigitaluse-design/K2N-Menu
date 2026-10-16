@@ -135,7 +135,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 59,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-butter-naan-card.webp"
+        "imageUrl": "/assets/images/hero/hero-naan-plain-card.webp"
       },
       {
         "id": "g-dish-15-butter-naan",
@@ -159,7 +159,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 49,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-kulcha-card.webp"
+        "imageUrl": "/assets/images/hero/hero-butter-kulcha-card.webp"
       },
       {
         "id": "g-dish-18-butter-roti",
@@ -199,7 +199,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 129,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-keema-naan-card.webp"
+        "imageUrl": "/assets/images/hero/hero-chicken-keema-naan-card.webp"
       },
       {
         "id": "g-dish-23-stuffed-paratha",
@@ -223,7 +223,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 99,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-kulcha-card.webp"
+        "imageUrl": "/assets/images/hero/hero-onion-kulcha-card.webp"
       },
       {
         "id": "g-dish-26-onion-paratha",
@@ -231,7 +231,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 99,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-paratha-card.webp"
+        "imageUrl": "/assets/images/hero/hero-onion-paratha-card.webp"
       }
     ]
   },
@@ -278,7 +278,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 299,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-bangda-fry-card.webp"
+        "imageUrl": "/assets/images/hero/hero-bangda-rava-fry-card.webp"
       },
       {
         "id": "g-dish-32-bangda-tawa-fry",
@@ -286,7 +286,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 299,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-bangda-fry-card.webp"
+        "imageUrl": "/assets/images/hero/hero-bangda-tawa-fry-card.webp"
       },
       {
         "id": "g-dish-33-kaatla-rava-fry",
@@ -302,7 +302,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 299,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-kaatla-fry-card.webp"
+        "imageUrl": "/assets/images/hero/hero-kaatla-tawa-fry-card.webp"
       }
     ]
   },
@@ -1166,7 +1166,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 349,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-mutton-dry-card.webp"
+        "imageUrl": "/assets/images/hero/hero-guntoor-mutton-dry-card.webp"
       },
       {
         "id": "g-dish-136-chilli-mutton-dry",
@@ -1174,7 +1174,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 349,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-mutton-dry-card.webp"
+        "imageUrl": "/assets/images/hero/hero-chilli-mutton-dry-card.webp"
       }
     ]
   },
@@ -2037,7 +2037,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 79,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-butter-naan-card.webp"
+        "imageUrl": "/assets/images/hero/hero-naan-plain-card.webp"
       },
       {
         "id": "t-dish-15-butter-naan",
@@ -2061,7 +2061,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 69,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-kulcha-card.webp"
+        "imageUrl": "/assets/images/hero/hero-butter-kulcha-card.webp"
       },
       {
         "id": "t-dish-18-butter-roti",
@@ -2101,7 +2101,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 149,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-keema-naan-card.webp"
+        "imageUrl": "/assets/images/hero/hero-chicken-keema-naan-card.webp"
       },
       {
         "id": "t-dish-23-stuffed-paratha",
@@ -2125,7 +2125,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 119,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-kulcha-card.webp"
+        "imageUrl": "/assets/images/hero/hero-onion-kulcha-card.webp"
       },
       {
         "id": "t-dish-26-onion-paratha",
@@ -2133,7 +2133,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 119,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-paratha-card.webp"
+        "imageUrl": "/assets/images/hero/hero-onion-paratha-card.webp"
       }
     ]
   },
@@ -2180,7 +2180,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 319,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-bangda-fry-card.webp"
+        "imageUrl": "/assets/images/hero/hero-bangda-rava-fry-card.webp"
       },
       {
         "id": "t-dish-32-bangda-tawa-fry",
@@ -2188,7 +2188,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 319,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-bangda-fry-card.webp"
+        "imageUrl": "/assets/images/hero/hero-bangda-tawa-fry-card.webp"
       },
       {
         "id": "t-dish-33-kaatla-rava-fry",
@@ -2204,7 +2204,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 319,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-kaatla-fry-card.webp"
+        "imageUrl": "/assets/images/hero/hero-kaatla-tawa-fry-card.webp"
       }
     ]
   },
@@ -3068,7 +3068,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 369,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-mutton-dry-card.webp"
+        "imageUrl": "/assets/images/hero/hero-guntoor-mutton-dry-card.webp"
       },
       {
         "id": "t-dish-136-chilli-mutton-dry",
@@ -3076,7 +3076,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 369,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-mutton-dry-card.webp"
+        "imageUrl": "/assets/images/hero/hero-chilli-mutton-dry-card.webp"
       }
     ]
   },
