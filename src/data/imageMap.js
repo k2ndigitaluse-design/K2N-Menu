@@ -3069,39 +3069,39 @@ export const dishImageMap = {
     "type": "GENERATED"
   },
   "g-dish-5-homemade-chicken-rice": {
-    "heroId": "hero-chicken-fried-rice",
-    "card": "/assets/images/hero/hero-chicken-fried-rice-card.webp",
-    "thumb": "/assets/images/hero/hero-chicken-fried-rice-thumb.webp",
+    "heroId": "hero-homemade-chicken-rice",
+    "card": "/assets/images/hero/hero-homemade-chicken-rice-card.webp",
+    "thumb": "/assets/images/hero/hero-homemade-chicken-rice-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-5-homemade-chicken-rice": {
-    "heroId": "hero-chicken-fried-rice",
-    "card": "/assets/images/hero/hero-chicken-fried-rice-card.webp",
-    "thumb": "/assets/images/hero/hero-chicken-fried-rice-thumb.webp",
+    "heroId": "hero-homemade-chicken-rice",
+    "card": "/assets/images/hero/hero-homemade-chicken-rice-card.webp",
+    "thumb": "/assets/images/hero/hero-homemade-chicken-rice-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-6-singapuri-chicken-fried-rice": {
-    "heroId": "hero-chicken-fried-rice",
-    "card": "/assets/images/hero/hero-chicken-fried-rice-card.webp",
-    "thumb": "/assets/images/hero/hero-chicken-fried-rice-thumb.webp",
+    "heroId": "hero-singapuri-chicken-rice",
+    "card": "/assets/images/hero/hero-singapuri-chicken-rice-card.webp",
+    "thumb": "/assets/images/hero/hero-singapuri-chicken-rice-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-6-singapuri-chicken-fried-rice": {
-    "heroId": "hero-chicken-fried-rice",
-    "card": "/assets/images/hero/hero-chicken-fried-rice-card.webp",
-    "thumb": "/assets/images/hero/hero-chicken-fried-rice-thumb.webp",
+    "heroId": "hero-singapuri-chicken-rice",
+    "card": "/assets/images/hero/hero-singapuri-chicken-rice-card.webp",
+    "thumb": "/assets/images/hero/hero-singapuri-chicken-rice-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-7-hohe-brown-chicken-rice": {
-    "heroId": "hero-chicken-fried-rice",
-    "card": "/assets/images/hero/hero-chicken-fried-rice-card.webp",
-    "thumb": "/assets/images/hero/hero-chicken-fried-rice-thumb.webp",
+    "heroId": "hero-hohe-brown-chicken-rice",
+    "card": "/assets/images/hero/hero-hohe-brown-chicken-rice-card.webp",
+    "thumb": "/assets/images/hero/hero-hohe-brown-chicken-rice-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-7-hohe-brown-chicken-rice": {
-    "heroId": "hero-chicken-fried-rice",
-    "card": "/assets/images/hero/hero-chicken-fried-rice-card.webp",
-    "thumb": "/assets/images/hero/hero-chicken-fried-rice-thumb.webp",
+    "heroId": "hero-hohe-brown-chicken-rice",
+    "card": "/assets/images/hero/hero-hohe-brown-chicken-rice-card.webp",
+    "thumb": "/assets/images/hero/hero-hohe-brown-chicken-rice-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-3-schezwan-chicken-fried-rice": {
@@ -3393,27 +3393,27 @@ export const dishImageMap = {
     "type": "GENERATED"
   },
   "g-dish-94-chicken-donne-biryani": {
-    "heroId": "hero-chicken-biryani-donne",
-    "card": "/assets/images/hero/hero-chicken-biryani-donne-card.webp",
-    "thumb": "/assets/images/hero/hero-chicken-biryani-donne-thumb.webp",
+    "heroId": "hero-chicken-donne-biryani",
+    "card": "/assets/images/hero/hero-chicken-donne-biryani-card.webp",
+    "thumb": "/assets/images/hero/hero-chicken-donne-biryani-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-94-chicken-donne-biryani": {
-    "heroId": "hero-chicken-biryani-donne",
-    "card": "/assets/images/hero/hero-chicken-biryani-donne-card.webp",
-    "thumb": "/assets/images/hero/hero-chicken-biryani-donne-thumb.webp",
+    "heroId": "hero-chicken-donne-biryani",
+    "card": "/assets/images/hero/hero-chicken-donne-biryani-card.webp",
+    "thumb": "/assets/images/hero/hero-chicken-donne-biryani-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-96-chicken-madike-biryani": {
-    "heroId": "hero-chicken-biryani-donne",
-    "card": "/assets/images/hero/hero-chicken-biryani-donne-card.webp",
-    "thumb": "/assets/images/hero/hero-chicken-biryani-donne-thumb.webp",
+    "heroId": "hero-chicken-madike-biryani",
+    "card": "/assets/images/hero/hero-chicken-madike-biryani-card.webp",
+    "thumb": "/assets/images/hero/hero-chicken-madike-biryani-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-96-chicken-madike-biryani": {
-    "heroId": "hero-chicken-biryani-donne",
-    "card": "/assets/images/hero/hero-chicken-biryani-donne-card.webp",
-    "thumb": "/assets/images/hero/hero-chicken-biryani-donne-thumb.webp",
+    "heroId": "hero-chicken-madike-biryani",
+    "card": "/assets/images/hero/hero-chicken-madike-biryani-card.webp",
+    "thumb": "/assets/images/hero/hero-chicken-madike-biryani-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-142-chicken-biryani": {
@@ -3429,27 +3429,27 @@ export const dishImageMap = {
     "type": "GENERATED"
   },
   "g-dish-147-chicken-mughlai-biryani": {
-    "heroId": "hero-chicken-biryani",
-    "card": "/assets/images/hero/hero-chicken-biryani-card.webp",
-    "thumb": "/assets/images/hero/hero-chicken-biryani-thumb.webp",
+    "heroId": "hero-chicken-mughlai-biryani",
+    "card": "/assets/images/hero/hero-chicken-mughlai-biryani-card.webp",
+    "thumb": "/assets/images/hero/hero-chicken-mughlai-biryani-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-147-chicken-mughlai-biryani": {
-    "heroId": "hero-chicken-biryani",
-    "card": "/assets/images/hero/hero-chicken-biryani-card.webp",
-    "thumb": "/assets/images/hero/hero-chicken-biryani-thumb.webp",
+    "heroId": "hero-chicken-mughlai-biryani",
+    "card": "/assets/images/hero/hero-chicken-mughlai-biryani-card.webp",
+    "thumb": "/assets/images/hero/hero-chicken-mughlai-biryani-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-148-chicken-tikka-biryani": {
-    "heroId": "hero-chicken-biryani",
-    "card": "/assets/images/hero/hero-chicken-biryani-card.webp",
-    "thumb": "/assets/images/hero/hero-chicken-biryani-thumb.webp",
+    "heroId": "hero-chicken-tikka-biryani",
+    "card": "/assets/images/hero/hero-chicken-tikka-biryani-card.webp",
+    "thumb": "/assets/images/hero/hero-chicken-tikka-biryani-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-148-chicken-tikka-biryani": {
-    "heroId": "hero-chicken-biryani",
-    "card": "/assets/images/hero/hero-chicken-biryani-card.webp",
-    "thumb": "/assets/images/hero/hero-chicken-biryani-thumb.webp",
+    "heroId": "hero-chicken-tikka-biryani",
+    "card": "/assets/images/hero/hero-chicken-tikka-biryani-card.webp",
+    "thumb": "/assets/images/hero/hero-chicken-tikka-biryani-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-88-muttam-dum-biryani": {
@@ -3465,15 +3465,15 @@ export const dishImageMap = {
     "type": "GENERATED"
   },
   "g-dish-95-mutton-donne-biryani": {
-    "heroId": "hero-mutton-biryani",
-    "card": "/assets/images/hero/hero-mutton-biryani-card.webp",
-    "thumb": "/assets/images/hero/hero-mutton-biryani-thumb.webp",
+    "heroId": "hero-mutton-donne-biryani",
+    "card": "/assets/images/hero/hero-mutton-donne-biryani-card.webp",
+    "thumb": "/assets/images/hero/hero-mutton-donne-biryani-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-95-mutton-donne-biryani": {
-    "heroId": "hero-mutton-biryani",
-    "card": "/assets/images/hero/hero-mutton-biryani-card.webp",
-    "thumb": "/assets/images/hero/hero-mutton-biryani-thumb.webp",
+    "heroId": "hero-mutton-donne-biryani",
+    "card": "/assets/images/hero/hero-mutton-donne-biryani-card.webp",
+    "thumb": "/assets/images/hero/hero-mutton-donne-biryani-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-143-mutton-biryani": {
@@ -4341,27 +4341,27 @@ export const dishImageMap = {
     "type": "GENERATED"
   },
   "g-dish-81-chicken-crunchy-chinese": {
-    "heroId": "hero-fried-chicken",
-    "card": "/assets/images/hero/hero-fried-chicken-card.webp",
-    "thumb": "/assets/images/hero/hero-fried-chicken-thumb.webp",
+    "heroId": "hero-chicken-crunchy",
+    "card": "/assets/images/hero/hero-chicken-crunchy-card.webp",
+    "thumb": "/assets/images/hero/hero-chicken-crunchy-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-81-chicken-crunchy-chinese": {
-    "heroId": "hero-fried-chicken",
-    "card": "/assets/images/hero/hero-fried-chicken-card.webp",
-    "thumb": "/assets/images/hero/hero-fried-chicken-thumb.webp",
+    "heroId": "hero-chicken-crunchy",
+    "card": "/assets/images/hero/hero-chicken-crunchy-card.webp",
+    "thumb": "/assets/images/hero/hero-chicken-crunchy-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-119-fried-chicken-kabab": {
-    "heroId": "hero-fried-chicken",
-    "card": "/assets/images/hero/hero-fried-chicken-card.webp",
-    "thumb": "/assets/images/hero/hero-fried-chicken-thumb.webp",
+    "heroId": "hero-fried-chicken-kabab",
+    "card": "/assets/images/hero/hero-fried-chicken-kabab-card.webp",
+    "thumb": "/assets/images/hero/hero-fried-chicken-kabab-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-119-fried-chicken-kabab": {
-    "heroId": "hero-fried-chicken",
-    "card": "/assets/images/hero/hero-fried-chicken-card.webp",
-    "thumb": "/assets/images/hero/hero-fried-chicken-thumb.webp",
+    "heroId": "hero-fried-chicken-kabab",
+    "card": "/assets/images/hero/hero-fried-chicken-kabab-card.webp",
+    "thumb": "/assets/images/hero/hero-fried-chicken-kabab-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-70-chicken-finger-with-tartar-sauce": {

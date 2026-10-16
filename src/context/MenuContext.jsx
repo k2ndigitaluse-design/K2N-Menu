@@ -26,7 +26,7 @@ function safeSetStorage(key, val) {
   } catch (e) {}
 }
 
-const MENU_VERSION = "k2n_v10_batch4_veg_paneer";
+const MENU_VERSION = "k2n_v11_batch5_biryani_rice";
 try {
   if (localStorage.getItem("k2n_menu_version") !== MENU_VERSION) {
     localStorage.removeItem("k2n_menu_ground");

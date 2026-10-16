@@ -49,7 +49,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 209,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-chicken-fried-rice-card.webp"
+        "imageUrl": "/assets/images/hero/hero-homemade-chicken-rice-card.webp"
       },
       {
         "id": "g-dish-6-singapuri-chicken-fried-rice",
@@ -57,7 +57,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 249,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-chicken-fried-rice-card.webp"
+        "imageUrl": "/assets/images/hero/hero-singapuri-chicken-rice-card.webp"
       },
       {
         "id": "g-dish-7-hohe-brown-chicken-rice",
@@ -65,7 +65,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 249,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-chicken-fried-rice-card.webp"
+        "imageUrl": "/assets/images/hero/hero-hohe-brown-chicken-rice-card.webp"
       }
     ]
   },
@@ -699,7 +699,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 199,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-fried-chicken-card.webp"
+        "imageUrl": "/assets/images/hero/hero-chicken-crunchy-card.webp"
       },
       {
         "id": "g-dish-82-veg-gold-coin",
@@ -810,7 +810,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 179,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-chicken-biryani-donne-card.webp"
+        "imageUrl": "/assets/images/hero/hero-chicken-donne-biryani-card.webp"
       },
       {
         "id": "g-dish-95-mutton-donne-biryani",
@@ -818,7 +818,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 279,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-mutton-biryani-card.webp"
+        "imageUrl": "/assets/images/hero/hero-mutton-donne-biryani-card.webp"
       },
       {
         "id": "g-dish-96-chicken-madike-biryani",
@@ -826,7 +826,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 229,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-chicken-biryani-donne-card.webp"
+        "imageUrl": "/assets/images/hero/hero-chicken-madike-biryani-card.webp"
       }
     ]
   },
@@ -1038,7 +1038,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 189,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-fried-chicken-card.webp"
+        "imageUrl": "/assets/images/hero/hero-fried-chicken-kabab-card.webp"
       },
       {
         "id": "g-dish-120-chilli-chicken",
@@ -1276,7 +1276,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 299,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-chicken-biryani-card.webp"
+        "imageUrl": "/assets/images/hero/hero-chicken-mughlai-biryani-card.webp"
       },
       {
         "id": "g-dish-148-chicken-tikka-biryani",
@@ -1284,7 +1284,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 299,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-chicken-biryani-card.webp"
+        "imageUrl": "/assets/images/hero/hero-chicken-tikka-biryani-card.webp"
       }
     ]
   },
@@ -1951,7 +1951,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 229,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-chicken-fried-rice-card.webp"
+        "imageUrl": "/assets/images/hero/hero-homemade-chicken-rice-card.webp"
       },
       {
         "id": "t-dish-6-singapuri-chicken-fried-rice",
@@ -1959,7 +1959,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 269,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-chicken-fried-rice-card.webp"
+        "imageUrl": "/assets/images/hero/hero-singapuri-chicken-rice-card.webp"
       },
       {
         "id": "t-dish-7-hohe-brown-chicken-rice",
@@ -1967,7 +1967,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 269,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-chicken-fried-rice-card.webp"
+        "imageUrl": "/assets/images/hero/hero-hohe-brown-chicken-rice-card.webp"
       }
     ]
   },
@@ -2601,7 +2601,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 219,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-fried-chicken-card.webp"
+        "imageUrl": "/assets/images/hero/hero-chicken-crunchy-card.webp"
       },
       {
         "id": "t-dish-82-veg-gold-coin",
@@ -2712,7 +2712,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 199,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-chicken-biryani-donne-card.webp"
+        "imageUrl": "/assets/images/hero/hero-chicken-donne-biryani-card.webp"
       },
       {
         "id": "t-dish-95-mutton-donne-biryani",
@@ -2720,7 +2720,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 299,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-mutton-biryani-card.webp"
+        "imageUrl": "/assets/images/hero/hero-mutton-donne-biryani-card.webp"
       },
       {
         "id": "t-dish-96-chicken-madike-biryani",
@@ -2728,7 +2728,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 249,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-chicken-biryani-donne-card.webp"
+        "imageUrl": "/assets/images/hero/hero-chicken-madike-biryani-card.webp"
       }
     ]
   },
@@ -2940,7 +2940,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 209,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-fried-chicken-card.webp"
+        "imageUrl": "/assets/images/hero/hero-fried-chicken-kabab-card.webp"
       },
       {
         "id": "t-dish-120-chilli-chicken",
@@ -3178,7 +3178,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 319,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-chicken-biryani-card.webp"
+        "imageUrl": "/assets/images/hero/hero-chicken-mughlai-biryani-card.webp"
       },
       {
         "id": "t-dish-148-chicken-tikka-biryani",
@@ -3186,7 +3186,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 319,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-chicken-biryani-card.webp"
+        "imageUrl": "/assets/images/hero/hero-chicken-tikka-biryani-card.webp"
       }
     ]
   },
