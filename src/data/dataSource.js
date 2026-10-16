@@ -95,8 +95,14 @@ export async function getMenu(floorId = "ground") {
       if (Array.isArray(cat.items)) {
         for (const item of cat.items) {
           if (item.imageUrl) {
+            const cleanId = (item.id || "").replace(/^[gt]-/, "");
+            const cleanName = (item.name || "").toLowerCase().trim();
+            const normName = cleanName.replace(/[^a-z0-9]/g, "");
+
             sampleImageMap.set(item.id, item.imageUrl);
-            sampleImageMap.set(item.name.toLowerCase().trim(), item.imageUrl);
+            sampleImageMap.set(cleanId, item.imageUrl);
+            sampleImageMap.set(cleanName, item.imageUrl);
+            sampleImageMap.set(normName, item.imageUrl);
           }
         }
       }
@@ -105,8 +111,20 @@ export async function getMenu(floorId = "ground") {
     const categories = [];
     snapshot.forEach((docSnap) => {
       const data = docSnap.data();
+      const rawItems = Array.isArray(data.items) ? data.items : [];
       const items = rawItems.map((item) => {
-        const authoritativeImage = sampleImageMap.get(item.id) || sampleImageMap.get(item.name?.toLowerCase().trim());
+        const cleanId = (item.id || "").replace(/^[gt]-/, "");
+        const cleanName = (item.name || "").toLowerCase().trim();
+        const normName = cleanName.replace(/[^a-z0-9]/g, "");
+
+        const authoritativeImage =
+          sampleImageMap.get(item.id) ||
+          sampleImageMap.get(cleanId) ||
+          sampleImageMap.get(`g-${cleanId}`) ||
+          sampleImageMap.get(`t-${cleanId}`) ||
+          sampleImageMap.get(cleanName) ||
+          sampleImageMap.get(normName);
+
         const imageUrl = authoritativeImage || item.imageUrl || "";
         return {
           ...item,
@@ -136,12 +154,7 @@ export async function getMenu(floorId = "ground") {
     saveToCache(cacheKey, categories);
     return categories;
   } catch (err) {
-    console.warn(`[dataSource] Error fetching from Firestore for floor ${floorId}, using fallback:`, err);
-    const cached = getFromCache(cacheKey);
-    const totalCachedItems = Array.isArray(cached) ? cached.reduce((sum, c) => sum + (c.items?.length || 0), 0) : 0;
-    if (cached !== null && Array.isArray(cached) && totalCachedItems > 0) {
-      return cached;
-    }
+    console.warn(`[dataSource] Error fetching from Firestore for floor ${floorId}, using fresh local fallback:`, err);
     const localSample = sampleMenus[floorId] || [];
     saveToCache(cacheKey, localSample);
     return localSample;

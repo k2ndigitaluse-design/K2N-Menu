@@ -26,11 +26,13 @@ function safeSetStorage(key, val) {
   } catch (e) {}
 }
 
-const MENU_VERSION = "k2n_v7_batch3_creamy_gravies";
+const MENU_VERSION = "k2n_v9_force_authoritative_images";
 try {
   if (localStorage.getItem("k2n_menu_version") !== MENU_VERSION) {
     localStorage.removeItem("k2n_menu_ground");
     localStorage.removeItem("k2n_menu_top");
+    localStorage.removeItem("k2n_brand_cache");
+    localStorage.removeItem("k2n_floors_cache");
     localStorage.setItem("k2n_menu_version", MENU_VERSION);
   }
 } catch (e) {}
@@ -40,11 +42,8 @@ export function MenuProvider({ children, initialFloor = "ground" }) {
   const [brand, setBrand] = useState(null);
   const [floorsConfig, setFloorsConfig] = useState(null);
 
-  // Raw menu categories for current floor
+  // Raw menu categories for current floor (authoritative from sample-menu)
   const [rawMenu, setRawMenu] = useState(() => {
-    const cached = getFromCache(`${STORAGE_KEYS.MENU_PREFIX}${initialFloor}`);
-    const count = Array.isArray(cached) ? cached.reduce((sum, c) => sum + (c.items?.length || 0), 0) : 0;
-    if (count > 0) return cached;
     return sampleMenus[initialFloor] || [];
   });
   const [loading, setLoading] = useState(false);
@@ -73,15 +72,7 @@ export function MenuProvider({ children, initialFloor = "ground" }) {
     setSelectedTypeState(savedType);
     setSelectedCategory("all");
     setSelectedDishIndex(0);
-
-    // Instant load from cache if available and has items
-    const cached = getFromCache(`${STORAGE_KEYS.MENU_PREFIX}${newFloor}`);
-    const count = Array.isArray(cached) ? cached.reduce((sum, c) => sum + (c.items?.length || 0), 0) : 0;
-    if (count > 0) {
-      setRawMenu(cached);
-    } else {
-      setRawMenu(sampleMenus[newFloor] || []);
-    }
+    setRawMenu(sampleMenus[newFloor] || []);
   }, []);
 
   const setSelectedType = useCallback((type) => {
@@ -138,14 +129,21 @@ export function MenuProvider({ children, initialFloor = "ground" }) {
     if (!activeFloorConfig || !Array.isArray(rawMenu)) return [];
 
     // Fallback sample image map
+    // Authoritative image map from local catalog
     const sampleFloorList = sampleMenus[floorId] || [];
     const sampleImageMap = new Map();
     for (const cat of sampleFloorList) {
       if (Array.isArray(cat.items)) {
         for (const it of cat.items) {
           if (it.imageUrl) {
+            const cleanId = (it.id || "").replace(/^[gt]-/, "");
+            const cleanName = (it.name || "").toLowerCase().trim();
+            const normName = cleanName.replace(/[^a-z0-9]/g, "");
+
             sampleImageMap.set(it.id, it.imageUrl);
-            sampleImageMap.set(it.name.toLowerCase().trim(), it.imageUrl);
+            sampleImageMap.set(cleanId, it.imageUrl);
+            sampleImageMap.set(cleanName, it.imageUrl);
+            sampleImageMap.set(normName, it.imageUrl);
           }
         }
       }
@@ -161,7 +159,18 @@ export function MenuProvider({ children, initialFloor = "ground" }) {
         // Match selected dietary type (veg, nonveg, or bar)
         if (item.type !== selectedType) continue;
 
-        const authoritativeImage = sampleImageMap.get(item.id) || sampleImageMap.get(item.name?.toLowerCase().trim());
+        const cleanId = (item.id || "").replace(/^[gt]-/, "");
+        const cleanName = (item.name || "").toLowerCase().trim();
+        const normName = cleanName.replace(/[^a-z0-9]/g, "");
+
+        const authoritativeImage =
+          sampleImageMap.get(item.id) ||
+          sampleImageMap.get(cleanId) ||
+          sampleImageMap.get(`g-${cleanId}`) ||
+          sampleImageMap.get(`t-${cleanId}`) ||
+          sampleImageMap.get(cleanName) ||
+          sampleImageMap.get(normName);
+
         const imageUrl = authoritativeImage || item.imageUrl || "";
 
         items.push({
