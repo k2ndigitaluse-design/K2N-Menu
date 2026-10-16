@@ -3849,39 +3849,39 @@ export const dishImageMap = {
     "type": "GENERATED"
   },
   "g-dish-38-paneer-hara-hirchi": {
-    "heroId": "hero-paneer-hara",
-    "card": "/assets/images/hero/hero-paneer-hara-card.webp",
-    "thumb": "/assets/images/hero/hero-paneer-hara-thumb.webp",
+    "heroId": "hero-paneer-hara-hirchi",
+    "card": "/assets/images/hero/hero-paneer-hara-hirchi-card.webp",
+    "thumb": "/assets/images/hero/hero-paneer-hara-hirchi-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-38-paneer-hara-hirchi": {
-    "heroId": "hero-paneer-hara",
-    "card": "/assets/images/hero/hero-paneer-hara-card.webp",
-    "thumb": "/assets/images/hero/hero-paneer-hara-thumb.webp",
+    "heroId": "hero-paneer-hara-hirchi",
+    "card": "/assets/images/hero/hero-paneer-hara-hirchi-card.webp",
+    "thumb": "/assets/images/hero/hero-paneer-hara-hirchi-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-40-paneer-pahadi": {
-    "heroId": "hero-paneer-hara",
-    "card": "/assets/images/hero/hero-paneer-hara-card.webp",
-    "thumb": "/assets/images/hero/hero-paneer-hara-thumb.webp",
+    "heroId": "hero-paneer-pahadi",
+    "card": "/assets/images/hero/hero-paneer-pahadi-card.webp",
+    "thumb": "/assets/images/hero/hero-paneer-pahadi-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-40-paneer-pahadi": {
-    "heroId": "hero-paneer-hara",
-    "card": "/assets/images/hero/hero-paneer-hara-card.webp",
-    "thumb": "/assets/images/hero/hero-paneer-hara-thumb.webp",
+    "heroId": "hero-paneer-pahadi",
+    "card": "/assets/images/hero/hero-paneer-pahadi-card.webp",
+    "thumb": "/assets/images/hero/hero-paneer-pahadi-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-41-paneer-multhani": {
-    "heroId": "hero-paneer-hara",
-    "card": "/assets/images/hero/hero-paneer-hara-card.webp",
-    "thumb": "/assets/images/hero/hero-paneer-hara-thumb.webp",
+    "heroId": "hero-paneer-multhani",
+    "card": "/assets/images/hero/hero-paneer-multhani-card.webp",
+    "thumb": "/assets/images/hero/hero-paneer-multhani-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-41-paneer-multhani": {
-    "heroId": "hero-paneer-hara",
-    "card": "/assets/images/hero/hero-paneer-hara-card.webp",
-    "thumb": "/assets/images/hero/hero-paneer-hara-thumb.webp",
+    "heroId": "hero-paneer-multhani",
+    "card": "/assets/images/hero/hero-paneer-multhani-card.webp",
+    "thumb": "/assets/images/hero/hero-paneer-multhani-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-36-veg-shole-kabab": {
@@ -4041,15 +4041,15 @@ export const dishImageMap = {
     "type": "GENERATED"
   },
   "g-dish-111-gobi-chilli": {
-    "heroId": "hero-veg-chilli",
-    "card": "/assets/images/hero/hero-veg-chilli-card.webp",
-    "thumb": "/assets/images/hero/hero-veg-chilli-thumb.webp",
+    "heroId": "hero-gobi-chilli",
+    "card": "/assets/images/hero/hero-gobi-chilli-card.webp",
+    "thumb": "/assets/images/hero/hero-gobi-chilli-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-111-gobi-chilli": {
-    "heroId": "hero-veg-chilli",
-    "card": "/assets/images/hero/hero-veg-chilli-card.webp",
-    "thumb": "/assets/images/hero/hero-veg-chilli-thumb.webp",
+    "heroId": "hero-gobi-chilli",
+    "card": "/assets/images/hero/hero-gobi-chilli-card.webp",
+    "thumb": "/assets/images/hero/hero-gobi-chilli-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-112-mushroom-chilli": {
@@ -4821,27 +4821,27 @@ export const dishImageMap = {
     "type": "GENERATED"
   },
   "g-dish-153-paneer-do-pyaza": {
-    "heroId": "hero-paneer-butter-masala",
-    "card": "/assets/images/hero/hero-paneer-butter-masala-card.webp",
-    "thumb": "/assets/images/hero/hero-paneer-butter-masala-thumb.webp",
+    "heroId": "hero-paneer-do-pyaza",
+    "card": "/assets/images/hero/hero-paneer-do-pyaza-card.webp",
+    "thumb": "/assets/images/hero/hero-paneer-do-pyaza-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-153-paneer-do-pyaza": {
-    "heroId": "hero-paneer-butter-masala",
-    "card": "/assets/images/hero/hero-paneer-butter-masala-card.webp",
-    "thumb": "/assets/images/hero/hero-paneer-butter-masala-thumb.webp",
+    "heroId": "hero-paneer-do-pyaza",
+    "card": "/assets/images/hero/hero-paneer-do-pyaza-card.webp",
+    "thumb": "/assets/images/hero/hero-paneer-do-pyaza-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-158-kaju-paneer-masala": {
-    "heroId": "hero-paneer-butter-masala",
-    "card": "/assets/images/hero/hero-paneer-butter-masala-card.webp",
-    "thumb": "/assets/images/hero/hero-paneer-butter-masala-thumb.webp",
+    "heroId": "hero-kaju-paneer",
+    "card": "/assets/images/hero/hero-kaju-paneer-card.webp",
+    "thumb": "/assets/images/hero/hero-kaju-paneer-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-158-kaju-paneer-masala": {
-    "heroId": "hero-paneer-butter-masala",
-    "card": "/assets/images/hero/hero-paneer-butter-masala-card.webp",
-    "thumb": "/assets/images/hero/hero-paneer-butter-masala-thumb.webp",
+    "heroId": "hero-kaju-paneer",
+    "card": "/assets/images/hero/hero-kaju-paneer-card.webp",
+    "thumb": "/assets/images/hero/hero-kaju-paneer-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-159-paneer-butter-masala": {
@@ -4893,39 +4893,39 @@ export const dishImageMap = {
     "type": "GENERATED"
   },
   "g-dish-151-veg-korma": {
-    "heroId": "hero-mix-veg",
-    "card": "/assets/images/hero/hero-mix-veg-card.webp",
-    "thumb": "/assets/images/hero/hero-mix-veg-thumb.webp",
+    "heroId": "hero-veg-korma",
+    "card": "/assets/images/hero/hero-veg-korma-card.webp",
+    "thumb": "/assets/images/hero/hero-veg-korma-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-151-veg-korma": {
-    "heroId": "hero-mix-veg",
-    "card": "/assets/images/hero/hero-mix-veg-card.webp",
-    "thumb": "/assets/images/hero/hero-mix-veg-thumb.webp",
+    "heroId": "hero-veg-korma",
+    "card": "/assets/images/hero/hero-veg-korma-card.webp",
+    "thumb": "/assets/images/hero/hero-veg-korma-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-155-veg-deewani-handi": {
-    "heroId": "hero-mix-veg",
-    "card": "/assets/images/hero/hero-mix-veg-card.webp",
-    "thumb": "/assets/images/hero/hero-mix-veg-thumb.webp",
+    "heroId": "hero-veg-deewani-handi",
+    "card": "/assets/images/hero/hero-veg-deewani-handi-card.webp",
+    "thumb": "/assets/images/hero/hero-veg-deewani-handi-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-155-veg-deewani-handi": {
-    "heroId": "hero-mix-veg",
-    "card": "/assets/images/hero/hero-mix-veg-card.webp",
-    "thumb": "/assets/images/hero/hero-mix-veg-thumb.webp",
+    "heroId": "hero-veg-deewani-handi",
+    "card": "/assets/images/hero/hero-veg-deewani-handi-card.webp",
+    "thumb": "/assets/images/hero/hero-veg-deewani-handi-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-163-aalu-gobhi-masala": {
-    "heroId": "hero-mix-veg",
-    "card": "/assets/images/hero/hero-mix-veg-card.webp",
-    "thumb": "/assets/images/hero/hero-mix-veg-thumb.webp",
+    "heroId": "hero-aalu-gobhi",
+    "card": "/assets/images/hero/hero-aalu-gobhi-card.webp",
+    "thumb": "/assets/images/hero/hero-aalu-gobhi-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-163-aalu-gobhi-masala": {
-    "heroId": "hero-mix-veg",
-    "card": "/assets/images/hero/hero-mix-veg-card.webp",
-    "thumb": "/assets/images/hero/hero-mix-veg-thumb.webp",
+    "heroId": "hero-aalu-gobhi",
+    "card": "/assets/images/hero/hero-aalu-gobhi-card.webp",
+    "thumb": "/assets/images/hero/hero-aalu-gobhi-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-154-paneer-malai-kofta": {
@@ -4953,15 +4953,15 @@ export const dishImageMap = {
     "type": "GENERATED"
   },
   "g-dish-157-kaju-kolhapure": {
-    "heroId": "hero-kaju-masala",
-    "card": "/assets/images/hero/hero-kaju-masala-card.webp",
-    "thumb": "/assets/images/hero/hero-kaju-masala-thumb.webp",
+    "heroId": "hero-kaju-kolhapure",
+    "card": "/assets/images/hero/hero-kaju-kolhapure-card.webp",
+    "thumb": "/assets/images/hero/hero-kaju-kolhapure-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-157-kaju-kolhapure": {
-    "heroId": "hero-kaju-masala",
-    "card": "/assets/images/hero/hero-kaju-masala-card.webp",
-    "thumb": "/assets/images/hero/hero-kaju-masala-thumb.webp",
+    "heroId": "hero-kaju-kolhapure",
+    "card": "/assets/images/hero/hero-kaju-kolhapure-card.webp",
+    "thumb": "/assets/images/hero/hero-kaju-kolhapure-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-84-butter-chicken-masala": {

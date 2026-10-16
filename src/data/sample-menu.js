@@ -341,7 +341,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 229,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-paneer-hara-card.webp"
+        "imageUrl": "/assets/images/hero/hero-paneer-hara-hirchi-card.webp"
       },
       {
         "id": "g-dish-39-paneer-malai-tikka",
@@ -357,7 +357,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 199,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-paneer-hara-card.webp"
+        "imageUrl": "/assets/images/hero/hero-paneer-pahadi-card.webp"
       },
       {
         "id": "g-dish-41-paneer-multhani",
@@ -365,7 +365,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 199,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-paneer-hara-card.webp"
+        "imageUrl": "/assets/images/hero/hero-paneer-multhani-card.webp"
       }
     ]
   },
@@ -967,7 +967,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 189,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-veg-chilli-card.webp"
+        "imageUrl": "/assets/images/hero/hero-gobi-chilli-card.webp"
       },
       {
         "id": "g-dish-112-mushroom-chilli",
@@ -1315,7 +1315,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 199,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-mix-veg-card.webp"
+        "imageUrl": "/assets/images/hero/hero-veg-korma-card.webp"
       },
       {
         "id": "g-dish-152-paneer-masala",
@@ -1331,7 +1331,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 259,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-paneer-butter-masala-card.webp"
+        "imageUrl": "/assets/images/hero/hero-paneer-do-pyaza-card.webp"
       },
       {
         "id": "g-dish-154-paneer-malai-kofta",
@@ -1347,7 +1347,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 229,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-mix-veg-card.webp"
+        "imageUrl": "/assets/images/hero/hero-veg-deewani-handi-card.webp"
       },
       {
         "id": "g-dish-156-kaju-masala",
@@ -1363,7 +1363,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 249,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-kaju-masala-card.webp"
+        "imageUrl": "/assets/images/hero/hero-kaju-kolhapure-card.webp"
       },
       {
         "id": "g-dish-158-kaju-paneer-masala",
@@ -1371,7 +1371,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 249,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-paneer-butter-masala-card.webp"
+        "imageUrl": "/assets/images/hero/hero-kaju-paneer-card.webp"
       },
       {
         "id": "g-dish-159-paneer-butter-masala",
@@ -1411,7 +1411,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 199,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-mix-veg-card.webp"
+        "imageUrl": "/assets/images/hero/hero-aalu-gobhi-card.webp"
       },
       {
         "id": "g-dish-164-paneeri-teki-tikka-masala",
@@ -2243,7 +2243,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 249,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-paneer-hara-card.webp"
+        "imageUrl": "/assets/images/hero/hero-paneer-hara-hirchi-card.webp"
       },
       {
         "id": "t-dish-39-paneer-malai-tikka",
@@ -2259,7 +2259,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 219,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-paneer-hara-card.webp"
+        "imageUrl": "/assets/images/hero/hero-paneer-pahadi-card.webp"
       },
       {
         "id": "t-dish-41-paneer-multhani",
@@ -2267,7 +2267,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 219,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-paneer-hara-card.webp"
+        "imageUrl": "/assets/images/hero/hero-paneer-multhani-card.webp"
       }
     ]
   },
@@ -2869,7 +2869,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 209,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-veg-chilli-card.webp"
+        "imageUrl": "/assets/images/hero/hero-gobi-chilli-card.webp"
       },
       {
         "id": "t-dish-112-mushroom-chilli",
@@ -3217,7 +3217,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 219,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-mix-veg-card.webp"
+        "imageUrl": "/assets/images/hero/hero-veg-korma-card.webp"
       },
       {
         "id": "t-dish-152-paneer-masala",
@@ -3233,7 +3233,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 279,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-paneer-butter-masala-card.webp"
+        "imageUrl": "/assets/images/hero/hero-paneer-do-pyaza-card.webp"
       },
       {
         "id": "t-dish-154-paneer-malai-kofta",
@@ -3249,7 +3249,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 249,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-mix-veg-card.webp"
+        "imageUrl": "/assets/images/hero/hero-veg-deewani-handi-card.webp"
       },
       {
         "id": "t-dish-156-kaju-masala",
@@ -3265,7 +3265,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 269,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-kaju-masala-card.webp"
+        "imageUrl": "/assets/images/hero/hero-kaju-kolhapure-card.webp"
       },
       {
         "id": "t-dish-158-kaju-paneer-masala",
@@ -3273,7 +3273,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 269,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-paneer-butter-masala-card.webp"
+        "imageUrl": "/assets/images/hero/hero-kaju-paneer-card.webp"
       },
       {
         "id": "t-dish-159-paneer-butter-masala",
@@ -3313,7 +3313,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 219,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-mix-veg-card.webp"
+        "imageUrl": "/assets/images/hero/hero-aalu-gobhi-card.webp"
       },
       {
         "id": "t-dish-164-paneeri-teki-tikka-masala",
