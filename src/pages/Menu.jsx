@@ -9,21 +9,23 @@ import GridView from "../views/GridView.jsx";
 import ListView from "../views/ListView.jsx";
 import ViewBar from "../components/ViewBar.jsx";
 
-export function Menu() {
+export function Menu({ floor }) {
   const { floorParam } = useParams();
   const { floorId, setFloor, viewMode, loading, error } = useMenu();
 
-  // Validate floorParam or sync floor
+  const targetFloor = floor || floorParam;
+
+  // Validate floor or sync floor
   useEffect(() => {
-    if (floorParam && (floorParam === "ground" || floorParam === "top")) {
-      if (floorId !== floorParam) {
-        setFloor(floorParam);
+    if (targetFloor && (targetFloor === "ground" || targetFloor === "top")) {
+      if (floorId !== targetFloor) {
+        setFloor(targetFloor);
       }
     }
-  }, [floorParam, floorId, setFloor]);
+  }, [targetFloor, floorId, setFloor]);
 
   // If invalid floor route, redirect to root
-  if (floorParam && floorParam !== "ground" && floorParam !== "top") {
+  if (targetFloor && targetFloor !== "ground" && targetFloor !== "top") {
     return <Navigate to="/" replace />;
   }
 

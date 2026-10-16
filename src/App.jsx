@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
-import { MenuProvider } from "./context/MenuContext.jsx";
+import { MenuProvider, useMenu } from "./context/MenuContext.jsx";
 import FloorChooser from "./pages/FloorChooser.jsx";
 import Menu from "./pages/Menu.jsx";
 import Intro from "./pages/Intro.jsx";
@@ -16,13 +16,7 @@ import "./admin/styles/admin.css";
 
 // Root Route handler managing Intro display on "/"
 function RootRoute() {
-  const [showIntro, setShowIntro] = useState(() => {
-    try {
-      return sessionStorage.getItem("k2n_intro_seen") !== "true";
-    } catch (e) {
-      return false;
-    }
-  });
+  const [showIntro, setShowIntro] = useState(true);
 
   return (
     <>
@@ -32,9 +26,38 @@ function RootRoute() {
   );
 }
 
-// Floor Menu Route Wrapper
+// Floor Menu Route Wrapper with Intro Video and Floor Lock
 function FloorMenuRoute({ floor }) {
-  return <Menu />;
+  const [showIntro, setShowIntro] = useState(true);
+  const { setFloor, floorId } = useMenu();
+
+  // Enforce floor synchronization
+  useEffect(() => {
+    if (floorId !== floor) {
+      setFloor(floor);
+    }
+  }, [floor, floorId, setFloor]);
+
+  // Floor Lock: trap browser back / popstate so users stay on their direct floor
+  useEffect(() => {
+    window.history.pushState({ lockedFloor: floor }, "", `/${floor}`);
+
+    const handlePopState = () => {
+      if (window.location.pathname !== `/${floor}`) {
+        window.history.pushState({ lockedFloor: floor }, "", `/${floor}`);
+      }
+    };
+
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, [floor]);
+
+  return (
+    <>
+      {showIntro && <Intro onComplete={() => setShowIntro(false)} />}
+      <Menu floor={floor} />
+    </>
+  );
 }
 
 // Floor-aware wrapper so MenuProvider knows initial floor

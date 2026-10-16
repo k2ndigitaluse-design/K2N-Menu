@@ -3,8 +3,8 @@ export const floors = {
     id: "ground",
     slug: "ground",
     name: "Ground Floor",
-    badge: "Main Dining",
-    allowedTypes: ["veg", "nonveg", "bar"]
+    badge: "Pure Veg Dining",
+    allowedTypes: ["veg"]
   },
   top: {
     id: "top",

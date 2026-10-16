@@ -94,8 +94,8 @@ export function FloorChooser() {
         <div style={{ display: "flex", flexDirection: "column", gap: "18px", width: "100%" }}>
           {/* Ground Floor Button */}
           <button
-            onClick={() => navigate("/ground")}
-            aria-label="Ground Floor, Main Dining"
+            onClick={() => navigate("/ground", { replace: true })}
+            aria-label="Ground Floor, Pure Veg Dining"
             style={{
               display: "flex",
               alignItems: "center",
@@ -122,12 +122,11 @@ export function FloorChooser() {
                 Ground Floor
               </span>
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                <span style={{ fontSize: "12px", color: "var(--muted)", fontWeight: 500 }}>
-                  Veg, Non-Veg &amp; Bar
+                <span style={{ fontSize: "12px", color: "var(--veg-green)", fontWeight: 600 }}>
+                  100% Pure Veg
                 </span>
                 <div style={{ display: "inline-flex", gap: "4px", alignItems: "center" }}>
                   <span className="type-dot veg" style={{ width: "6px", height: "6px" }} />
-                  <span className="type-dot nonveg" style={{ width: "6px", height: "6px" }} />
                 </div>
               </div>
             </div>
@@ -151,7 +150,7 @@ export function FloorChooser() {
 
           {/* Top Floor Button */}
           <button
-            onClick={() => navigate("/top")}
+            onClick={() => navigate("/top", { replace: true })}
             aria-label="Top Floor, Lounge Dining"
             style={{
               display: "flex",

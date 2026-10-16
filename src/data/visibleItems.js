@@ -13,9 +13,15 @@ export function isItemVisibleOnFloor(item, floor) {
   if (!item || !item.name) return false;
 
   const floorId = typeof floor === "string" ? floor : floor?.id;
+
+  // HARD SAFETY: Ground floor is strictly Pure Veg (no non-veg or bar allowed)
+  if (floorId === "ground" && item.type !== "veg") {
+    return false;
+  }
+
   const allowedTypes = Array.isArray(floor?.allowedTypes)
     ? floor.allowedTypes
-    : ["veg", "nonveg", "bar"];
+    : (floorId === "ground" ? ["veg"] : ["veg", "nonveg", "bar"]);
 
   // Check floor type permission
   if (!allowedTypes.includes(item.type)) {

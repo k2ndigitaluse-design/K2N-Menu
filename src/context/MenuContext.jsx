@@ -49,8 +49,9 @@ export function MenuProvider({ children, initialFloor = "ground" }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  // Type filter: both floors can be "veg" | "nonveg" | "bar"
+  // Type filter: ground floor is strictly "veg"; top floor can be "veg" | "nonveg" | "bar"
   const [selectedType, setSelectedTypeState] = useState(() => {
+    if (initialFloor === "ground") return "veg";
     return safeGetStorage(STORAGE_KEYS.TYPE_PREFIX + initialFloor, "veg");
   });
 
@@ -68,14 +69,18 @@ export function MenuProvider({ children, initialFloor = "ground" }) {
   // Set floor and enforce floor constraints
   const setFloor = useCallback((newFloor) => {
     setFloorId(newFloor);
-    const savedType = safeGetStorage(STORAGE_KEYS.TYPE_PREFIX + newFloor, "veg");
-    setSelectedTypeState(savedType);
+    const targetType = newFloor === "ground" ? "veg" : safeGetStorage(STORAGE_KEYS.TYPE_PREFIX + newFloor, "veg");
+    setSelectedTypeState(targetType);
     setSelectedCategory("all");
     setSelectedDishIndex(0);
     setRawMenu(sampleMenus[newFloor] || []);
   }, []);
 
   const setSelectedType = useCallback((type) => {
+    if (floorId === "ground") {
+      setSelectedTypeState("veg");
+      return;
+    }
     setSelectedTypeState(type);
     safeSetStorage(STORAGE_KEYS.TYPE_PREFIX + floorId, type);
     setSelectedCategory("all");

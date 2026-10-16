@@ -2,7 +2,45 @@ import React from "react";
 import { useMenu } from "../context/MenuContext.jsx";
 
 export function TypeSwitch() {
-  const { selectedType, setSelectedType } = useMenu();
+  const { selectedType, setSelectedType, floorId, activeFloorConfig } = useMenu();
+
+  const isGround = floorId === "ground";
+  const allowed = activeFloorConfig?.allowedTypes || (isGround ? ["veg"] : ["veg", "nonveg", "bar"]);
+
+  // If Ground Floor (veg only), display an elegant Pure Veg badge instead of nonveg/bar tabs
+  if (isGround || (allowed.length === 1 && allowed.includes("veg"))) {
+    return (
+      <div style={{ display: "flex", justifyContent: "center", margin: "4px 16px 8px", position: "relative", zIndex: 5 }}>
+        <div
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            gap: "7px",
+            backgroundColor: "#FFFDF9",
+            border: "1.2px solid rgba(46, 125, 50, 0.35)",
+            borderRadius: "999px",
+            padding: "5px 18px",
+            boxShadow: "0 2px 8px rgba(46, 125, 50, 0.10)",
+            fontSize: "12.5px",
+            fontWeight: 600,
+            color: "var(--veg-green)",
+            letterSpacing: "0.4px"
+          }}
+        >
+          <span
+            style={{
+              width: "7.5px",
+              height: "7.5px",
+              borderRadius: "50%",
+              backgroundColor: "var(--veg-green)",
+              boxShadow: "0 0 6px rgba(46, 125, 50, 0.45)"
+            }}
+          />
+          <span>100% Pure Vegetarian</span>
+        </div>
+      </div>
+    );
+  }
 
   const options = [
     { id: "veg", label: "Veg", dot: "veg" },
