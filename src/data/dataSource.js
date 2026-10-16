@@ -105,11 +105,14 @@ export async function getMenu(floorId = "ground") {
     const categories = [];
     snapshot.forEach((docSnap) => {
       const data = docSnap.data();
-      const rawItems = Array.isArray(data.items) ? data.items : [];
-      const items = rawItems.map((item) => ({
-        ...item,
-        imageUrl: item.imageUrl || sampleImageMap.get(item.id) || sampleImageMap.get(item.name?.toLowerCase().trim()) || ""
-      }));
+      const items = rawItems.map((item) => {
+        const authoritativeImage = sampleImageMap.get(item.id) || sampleImageMap.get(item.name?.toLowerCase().trim());
+        const imageUrl = authoritativeImage || item.imageUrl || "";
+        return {
+          ...item,
+          imageUrl
+        };
+      });
 
       categories.push({
         id: docSnap.id,

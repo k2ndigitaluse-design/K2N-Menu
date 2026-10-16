@@ -31,3 +31,17 @@ dist-ssr
 /Logo_br_removed.png
 /Candidate*.png
 /Screenshot*.png
+/Intro.mp4
+
+# Raw image archives & HD master assets (not for production git)
+/Dishes_Images_Raw_Data/
+/source-images/
+public/assets/images/user-generated/
+
+# Scratch & temporary development files
+/scratch/
+__pycache__/
+*.pyc
+/myreference.txt
+/RESTORED_CHAT_HISTORY.md
+

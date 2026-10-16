@@ -26,6 +26,15 @@ function safeSetStorage(key, val) {
   } catch (e) {}
 }
 
+const MENU_VERSION = "k2n_v7_batch3_creamy_gravies";
+try {
+  if (localStorage.getItem("k2n_menu_version") !== MENU_VERSION) {
+    localStorage.removeItem("k2n_menu_ground");
+    localStorage.removeItem("k2n_menu_top");
+    localStorage.setItem("k2n_menu_version", MENU_VERSION);
+  }
+} catch (e) {}
+
 export function MenuProvider({ children, initialFloor = "ground" }) {
   const [floorId, setFloorId] = useState(initialFloor);
   const [brand, setBrand] = useState(null);
@@ -152,7 +161,8 @@ export function MenuProvider({ children, initialFloor = "ground" }) {
         // Match selected dietary type (veg, nonveg, or bar)
         if (item.type !== selectedType) continue;
 
-        const imageUrl = item.imageUrl || sampleImageMap.get(item.id) || sampleImageMap.get(item.name?.toLowerCase().trim()) || "";
+        const authoritativeImage = sampleImageMap.get(item.id) || sampleImageMap.get(item.name?.toLowerCase().trim());
+        const imageUrl = authoritativeImage || item.imageUrl || "";
 
         items.push({
           ...item,

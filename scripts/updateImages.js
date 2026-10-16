@@ -8,21 +8,16 @@ const menuPath = path.resolve(__dirname, "../src/data/sample-menu.js");
 let content = fs.readFileSync(menuPath, "utf-8");
 
 const imageUpdates = {
-  "chicken-tandoori-full": "/assets/images/chicken_tandoori.jpg",
-  "chicken-tandoori-half": "/assets/images/chicken_tandoori.jpg",
-  "chicken-pahadi-kabab": "/assets/images/chicken_pahadi_tandoori.jpg",
-  "chicken-kalmi-kabab": "/assets/images/chicken_tangdi_kabab.jpg",
-  "chicken-reshmi-kabab": "/assets/images/chicken_reshmi_malai.jpg",
-  "chicken-tikka": "/assets/images/chicken_pahadi_tikka.jpg",
-  "paneer-tikka": "/assets/images/paneer_tikka_real.jpg",
-  "paneer-pahadi": "/assets/images/paneer_tikka_real.jpg",
-  "chicken-rara-masala": "/assets/images/chicken_rara.jpg",
-  "chicken-pepper-dry": "/assets/images/paneer_pepper_dry.jpg",
-  "chicken-manchow-soup": "/assets/images/soup_manchow.jpg",
-  "hot-and-sour-soup": "/assets/images/soup_manchow.jpg",
-  "triple-fried-chicken-rice": "/assets/images/triple_chicken_fried_rice.jpg",
-  "chicken-noorani-tikka": "/assets/images/k2n_special_kebab.jpg",
-  "chicken-jafrani-tikka": "/assets/images/nonveg_tandoori_platter.jpg"
+  "chicken-tandoori-full": "/assets/images/real/chicken_tandoori-card.webp",
+  "chicken-tandoori-half": "/assets/images/real/chicken_tandoori-card.webp",
+  "chicken-pahadi-kabab": "/assets/images/real/chicken_pahadi_tandoori-card.webp",
+  "chicken-tangadi-kabab-2-pcs": "/assets/images/real/chicken_tangdi_kabab-card.webp",
+  "chicken-tangadi-kabab-1-pc": "/assets/images/real/chicken_tangdi_kabab-card.webp",
+  "chicken-reshmi-kabab": "/assets/images/real/chicken_reshmi_malai-card.webp",
+  "paneer-tikka": "/assets/images/real/paneer_tikka_real-card.webp",
+  "chicken-rara-masala": "/assets/images/real/chicken_rara-card.webp",
+  "chicken-manchow-soup": "/assets/images/real/soup_manchow-card.webp",
+  "triple-fried-chicken-rice": "/assets/images/real/triple_chicken_fried_rice-card.webp"
 };
 
 let count = 0;

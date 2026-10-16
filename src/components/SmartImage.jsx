@@ -92,31 +92,35 @@ export function SmartImage({
           />
           <span
             style={{
-              fontSize: "13px",
+              fontSize: "clamp(8px, 1.8vw, 11px)",
               fontFamily: "var(--font-heading)",
               color: "var(--red)",
               fontWeight: 800,
-              letterSpacing: "2.5px",
+              letterSpacing: "0.8px",
               textTransform: "uppercase",
               display: "inline-flex",
               alignItems: "center",
-              gap: "0.5px"
+              justifyContent: "center",
+              whiteSpace: "nowrap",
+              maxWidth: "96%",
+              overflow: "hidden",
+              lineHeight: 1
             }}
           >
             <span>K</span>
             <span
               style={{
-                fontSize: "1.54em",
+                fontSize: "1.35em",
                 fontWeight: 800,
                 display: "inline-block",
                 lineHeight: 0.9,
-                transform: "translateY(-1px)",
-                padding: "0 1px"
+                transform: "translateY(-0.5px)",
+                padding: "0 0.5px"
               }}
             >
               2
             </span>
-            <span>N&nbsp;&nbsp;HOTELS</span>
+            <span>N&nbsp;HOTELS</span>
           </span>
         </div>
       )}
