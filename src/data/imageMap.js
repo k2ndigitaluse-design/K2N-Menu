@@ -3129,15 +3129,15 @@ export const dishImageMap = {
     "type": "GENERATED"
   },
   "g-dish-203-paneer-fried-rice": {
-    "heroId": "hero-veg-fried-rice",
-    "card": "/assets/images/hero/hero-veg-fried-rice-card.webp",
-    "thumb": "/assets/images/hero/hero-veg-fried-rice-thumb.webp",
+    "heroId": "hero-paneer-fried-rice",
+    "card": "/assets/images/hero/hero-paneer-fried-rice-card.webp",
+    "thumb": "/assets/images/hero/hero-paneer-fried-rice-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-203-paneer-fried-rice": {
-    "heroId": "hero-veg-fried-rice",
-    "card": "/assets/images/hero/hero-veg-fried-rice-card.webp",
-    "thumb": "/assets/images/hero/hero-veg-fried-rice-thumb.webp",
+    "heroId": "hero-paneer-fried-rice",
+    "card": "/assets/images/hero/hero-paneer-fried-rice-card.webp",
+    "thumb": "/assets/images/hero/hero-paneer-fried-rice-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-201-veg-schezwan-rice": {
@@ -3153,15 +3153,15 @@ export const dishImageMap = {
     "type": "GENERATED"
   },
   "g-dish-202-veg-triple-schezwan-rice": {
-    "heroId": "hero-veg-schezwan-rice",
-    "card": "/assets/images/hero/hero-veg-schezwan-rice-card.webp",
-    "thumb": "/assets/images/hero/hero-veg-schezwan-rice-thumb.webp",
+    "heroId": "hero-veg-triple-schezwan-rice",
+    "card": "/assets/images/hero/hero-veg-triple-schezwan-rice-card.webp",
+    "thumb": "/assets/images/hero/hero-veg-triple-schezwan-rice-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-202-veg-triple-schezwan-rice": {
-    "heroId": "hero-veg-schezwan-rice",
-    "card": "/assets/images/hero/hero-veg-schezwan-rice-card.webp",
-    "thumb": "/assets/images/hero/hero-veg-schezwan-rice-thumb.webp",
+    "heroId": "hero-veg-triple-schezwan-rice",
+    "card": "/assets/images/hero/hero-veg-triple-schezwan-rice-card.webp",
+    "thumb": "/assets/images/hero/hero-veg-triple-schezwan-rice-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-194-jeera-rice": {
@@ -3285,15 +3285,15 @@ export const dishImageMap = {
     "type": "GENERATED"
   },
   "g-dish-208-egg-schezwan-noodles": {
-    "heroId": "hero-egg-noodles",
-    "card": "/assets/images/hero/hero-egg-noodles-card.webp",
-    "thumb": "/assets/images/hero/hero-egg-noodles-thumb.webp",
+    "heroId": "hero-egg-schezwan-noodles",
+    "card": "/assets/images/hero/hero-egg-schezwan-noodles-card.webp",
+    "thumb": "/assets/images/hero/hero-egg-schezwan-noodles-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-208-egg-schezwan-noodles": {
-    "heroId": "hero-egg-noodles",
-    "card": "/assets/images/hero/hero-egg-noodles-card.webp",
-    "thumb": "/assets/images/hero/hero-egg-noodles-thumb.webp",
+    "heroId": "hero-egg-schezwan-noodles",
+    "card": "/assets/images/hero/hero-egg-schezwan-noodles-card.webp",
+    "thumb": "/assets/images/hero/hero-egg-schezwan-noodles-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-209-chicken-noodles": {
@@ -3309,15 +3309,15 @@ export const dishImageMap = {
     "type": "GENERATED"
   },
   "g-dish-210-chicken-schezwan-noodles": {
-    "heroId": "hero-chicken-noodles",
-    "card": "/assets/images/hero/hero-chicken-noodles-card.webp",
-    "thumb": "/assets/images/hero/hero-chicken-noodles-thumb.webp",
+    "heroId": "hero-chicken-schezwan-noodles",
+    "card": "/assets/images/hero/hero-chicken-schezwan-noodles-card.webp",
+    "thumb": "/assets/images/hero/hero-chicken-schezwan-noodles-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-210-chicken-schezwan-noodles": {
-    "heroId": "hero-chicken-noodles",
-    "card": "/assets/images/hero/hero-chicken-noodles-card.webp",
-    "thumb": "/assets/images/hero/hero-chicken-noodles-thumb.webp",
+    "heroId": "hero-chicken-schezwan-noodles",
+    "card": "/assets/images/hero/hero-chicken-schezwan-noodles-card.webp",
+    "thumb": "/assets/images/hero/hero-chicken-schezwan-noodles-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-8-mutton-mandi-rice-full": {
@@ -3477,15 +3477,15 @@ export const dishImageMap = {
     "type": "GENERATED"
   },
   "g-dish-143-mutton-biryani": {
-    "heroId": "hero-mutton-biryani",
-    "card": "/assets/images/hero/hero-mutton-biryani-card.webp",
-    "thumb": "/assets/images/hero/hero-mutton-biryani-thumb.webp",
+    "heroId": "hero-royal-mutton-biryani",
+    "card": "/assets/images/hero/hero-royal-mutton-biryani-card.webp",
+    "thumb": "/assets/images/hero/hero-royal-mutton-biryani-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-143-mutton-biryani": {
-    "heroId": "hero-mutton-biryani",
-    "card": "/assets/images/hero/hero-mutton-biryani-card.webp",
-    "thumb": "/assets/images/hero/hero-mutton-biryani-thumb.webp",
+    "heroId": "hero-royal-mutton-biryani",
+    "card": "/assets/images/hero/hero-royal-mutton-biryani-card.webp",
+    "thumb": "/assets/images/hero/hero-royal-mutton-biryani-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-144-fish-biryani": {
@@ -3561,27 +3561,27 @@ export const dishImageMap = {
     "type": "GENERATED"
   },
   "g-dish-140-paneer-kaju-biryani": {
-    "heroId": "hero-veg-biryani",
-    "card": "/assets/images/hero/hero-veg-biryani-card.webp",
-    "thumb": "/assets/images/hero/hero-veg-biryani-thumb.webp",
+    "heroId": "hero-paneer-kaju-biryani",
+    "card": "/assets/images/hero/hero-paneer-kaju-biryani-card.webp",
+    "thumb": "/assets/images/hero/hero-paneer-kaju-biryani-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-140-paneer-kaju-biryani": {
-    "heroId": "hero-veg-biryani",
-    "card": "/assets/images/hero/hero-veg-biryani-card.webp",
-    "thumb": "/assets/images/hero/hero-veg-biryani-thumb.webp",
+    "heroId": "hero-paneer-kaju-biryani",
+    "card": "/assets/images/hero/hero-paneer-kaju-biryani-card.webp",
+    "thumb": "/assets/images/hero/hero-paneer-kaju-biryani-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-141-mushroom-kaju-biryani": {
-    "heroId": "hero-veg-biryani",
-    "card": "/assets/images/hero/hero-veg-biryani-card.webp",
-    "thumb": "/assets/images/hero/hero-veg-biryani-thumb.webp",
+    "heroId": "hero-mushroom-kaju-biryani",
+    "card": "/assets/images/hero/hero-mushroom-kaju-biryani-card.webp",
+    "thumb": "/assets/images/hero/hero-mushroom-kaju-biryani-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-141-mushroom-kaju-biryani": {
-    "heroId": "hero-veg-biryani",
-    "card": "/assets/images/hero/hero-veg-biryani-card.webp",
-    "thumb": "/assets/images/hero/hero-veg-biryani-thumb.webp",
+    "heroId": "hero-mushroom-kaju-biryani",
+    "card": "/assets/images/hero/hero-mushroom-kaju-biryani-card.webp",
+    "thumb": "/assets/images/hero/hero-mushroom-kaju-biryani-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-18-butter-roti": {
@@ -4305,15 +4305,15 @@ export const dishImageMap = {
     "type": "GENERATED"
   },
   "g-dish-77-mutton-seekh-kabab": {
-    "heroId": "hero-mutton-seekh",
-    "card": "/assets/images/hero/hero-mutton-seekh-card.webp",
-    "thumb": "/assets/images/hero/hero-mutton-seekh-thumb.webp",
+    "heroId": "hero-mutton-seekh-kabab-special",
+    "card": "/assets/images/hero/hero-mutton-seekh-kabab-special-card.webp",
+    "thumb": "/assets/images/hero/hero-mutton-seekh-kabab-special-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-77-mutton-seekh-kabab": {
-    "heroId": "hero-mutton-seekh",
-    "card": "/assets/images/hero/hero-mutton-seekh-card.webp",
-    "thumb": "/assets/images/hero/hero-mutton-seekh-thumb.webp",
+    "heroId": "hero-mutton-seekh-kabab-special",
+    "card": "/assets/images/hero/hero-mutton-seekh-kabab-special-card.webp",
+    "thumb": "/assets/images/hero/hero-mutton-seekh-kabab-special-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-59-tandoori-jhinga": {
@@ -4461,15 +4461,15 @@ export const dishImageMap = {
     "type": "GENERATED"
   },
   "g-dish-117-egg-pepper-dry": {
-    "heroId": "hero-egg-chilli",
-    "card": "/assets/images/hero/hero-egg-chilli-card.webp",
-    "thumb": "/assets/images/hero/hero-egg-chilli-thumb.webp",
+    "heroId": "hero-egg-pepper-dry",
+    "card": "/assets/images/hero/hero-egg-pepper-dry-card.webp",
+    "thumb": "/assets/images/hero/hero-egg-pepper-dry-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-117-egg-pepper-dry": {
-    "heroId": "hero-egg-chilli",
-    "card": "/assets/images/hero/hero-egg-chilli-card.webp",
-    "thumb": "/assets/images/hero/hero-egg-chilli-thumb.webp",
+    "heroId": "hero-egg-pepper-dry",
+    "card": "/assets/images/hero/hero-egg-pepper-dry-card.webp",
+    "thumb": "/assets/images/hero/hero-egg-pepper-dry-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-120-chilli-chicken": {
@@ -4797,15 +4797,15 @@ export const dishImageMap = {
     "type": "GENERATED"
   },
   "g-dish-161-dal-tadka": {
-    "heroId": "hero-dal",
-    "card": "/assets/images/hero/hero-dal-card.webp",
-    "thumb": "/assets/images/hero/hero-dal-thumb.webp",
+    "heroId": "hero-dal-tadka",
+    "card": "/assets/images/hero/hero-dal-tadka-card.webp",
+    "thumb": "/assets/images/hero/hero-dal-tadka-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-161-dal-tadka": {
-    "heroId": "hero-dal",
-    "card": "/assets/images/hero/hero-dal-card.webp",
-    "thumb": "/assets/images/hero/hero-dal-thumb.webp",
+    "heroId": "hero-dal-tadka",
+    "card": "/assets/images/hero/hero-dal-tadka-card.webp",
+    "thumb": "/assets/images/hero/hero-dal-tadka-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-152-paneer-masala": {
@@ -4845,15 +4845,15 @@ export const dishImageMap = {
     "type": "GENERATED"
   },
   "g-dish-159-paneer-butter-masala": {
-    "heroId": "hero-paneer-butter-masala",
-    "card": "/assets/images/hero/hero-paneer-butter-masala-card.webp",
-    "thumb": "/assets/images/hero/hero-paneer-butter-masala-thumb.webp",
+    "heroId": "hero-paneer-butter-masala-special",
+    "card": "/assets/images/hero/hero-paneer-butter-masala-special-card.webp",
+    "thumb": "/assets/images/hero/hero-paneer-butter-masala-special-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-159-paneer-butter-masala": {
-    "heroId": "hero-paneer-butter-masala",
-    "card": "/assets/images/hero/hero-paneer-butter-masala-card.webp",
-    "thumb": "/assets/images/hero/hero-paneer-butter-masala-thumb.webp",
+    "heroId": "hero-paneer-butter-masala-special",
+    "card": "/assets/images/hero/hero-paneer-butter-masala-special-card.webp",
+    "thumb": "/assets/images/hero/hero-paneer-butter-masala-special-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-164-paneeri-teki-tikka-masala": {
@@ -4977,15 +4977,15 @@ export const dishImageMap = {
     "type": "GENERATED"
   },
   "g-dish-85-butter-chicken-bilder": {
-    "heroId": "hero-butter-chicken",
-    "card": "/assets/images/hero/hero-butter-chicken-card.webp",
-    "thumb": "/assets/images/hero/hero-butter-chicken-thumb.webp",
+    "heroId": "hero-butter-chicken-bilder",
+    "card": "/assets/images/hero/hero-butter-chicken-bilder-card.webp",
+    "thumb": "/assets/images/hero/hero-butter-chicken-bilder-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-85-butter-chicken-bilder": {
-    "heroId": "hero-butter-chicken",
-    "card": "/assets/images/hero/hero-butter-chicken-card.webp",
-    "thumb": "/assets/images/hero/hero-butter-chicken-thumb.webp",
+    "heroId": "hero-butter-chicken-bilder",
+    "card": "/assets/images/hero/hero-butter-chicken-bilder-card.webp",
+    "thumb": "/assets/images/hero/hero-butter-chicken-bilder-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-165-chicken-handi": {
@@ -5157,15 +5157,15 @@ export const dishImageMap = {
     "type": "GENERATED"
   },
   "g-dish-182-chicken-tikka-masala": {
-    "heroId": "hero-chicken-tikka-masala",
-    "card": "/assets/images/hero/hero-chicken-tikka-masala-card.webp",
-    "thumb": "/assets/images/hero/hero-chicken-tikka-masala-thumb.webp",
+    "heroId": "hero-chicken-tikka-masala-curry",
+    "card": "/assets/images/hero/hero-chicken-tikka-masala-curry-card.webp",
+    "thumb": "/assets/images/hero/hero-chicken-tikka-masala-curry-thumb.webp",
     "type": "GENERATED"
   },
   "t-dish-182-chicken-tikka-masala": {
-    "heroId": "hero-chicken-tikka-masala",
-    "card": "/assets/images/hero/hero-chicken-tikka-masala-card.webp",
-    "thumb": "/assets/images/hero/hero-chicken-tikka-masala-thumb.webp",
+    "heroId": "hero-chicken-tikka-masala-curry",
+    "card": "/assets/images/hero/hero-chicken-tikka-masala-curry-card.webp",
+    "thumb": "/assets/images/hero/hero-chicken-tikka-masala-curry-thumb.webp",
     "type": "GENERATED"
   },
   "g-dish-172-chicken-hyderabadi-masala": {

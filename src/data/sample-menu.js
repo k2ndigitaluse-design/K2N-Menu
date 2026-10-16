@@ -667,7 +667,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 379,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-mutton-seekh-card.webp"
+        "imageUrl": "/assets/images/hero/hero-mutton-seekh-kabab-special-card.webp"
       },
       {
         "id": "g-dish-78-chilli-potato-chinese",
@@ -731,7 +731,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 379,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-butter-chicken-card.webp"
+        "imageUrl": "/assets/images/hero/hero-butter-chicken-bilder-card.webp"
       }
     ]
   },
@@ -1022,7 +1022,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 149,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-egg-chilli-card.webp"
+        "imageUrl": "/assets/images/hero/hero-egg-pepper-dry-card.webp"
       },
       {
         "id": "g-dish-118-chicken-kabab",
@@ -1213,7 +1213,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 299,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-paneer-biryani-card.webp"
+        "imageUrl": "/assets/images/hero/hero-paneer-kaju-biryani-card.webp"
       },
       {
         "id": "g-dish-141-mushroom-kaju-biryani",
@@ -1221,7 +1221,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 299,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-mushroom-biryani-card.webp"
+        "imageUrl": "/assets/images/hero/hero-mushroom-kaju-biryani-card.webp"
       }
     ]
   },
@@ -1244,7 +1244,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 329,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-mutton-biryani-card.webp"
+        "imageUrl": "/assets/images/hero/hero-royal-mutton-biryani-card.webp"
       },
       {
         "id": "g-dish-144-fish-biryani",
@@ -1379,7 +1379,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 249,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-paneer-butter-masala-card.webp"
+        "imageUrl": "/assets/images/hero/hero-paneer-butter-masala-special-card.webp"
       },
       {
         "id": "g-dish-160-dal-kolhapuri",
@@ -1395,7 +1395,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 199,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-dal-card.webp"
+        "imageUrl": "/assets/images/hero/hero-dal-tadka-card.webp"
       },
       {
         "id": "g-dish-162-palak-paneer",
@@ -1570,7 +1570,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 319,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-chicken-tikka-masala-card.webp"
+        "imageUrl": "/assets/images/hero/hero-chicken-tikka-masala-curry-card.webp"
       },
       {
         "id": "g-dish-183-chicken-methi-masala",
@@ -1744,7 +1744,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 179,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-veg-schezwan-rice-card.webp"
+        "imageUrl": "/assets/images/hero/hero-veg-triple-schezwan-rice-card.webp"
       },
       {
         "id": "g-dish-203-paneer-fried-rice",
@@ -1752,7 +1752,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 189,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-veg-fried-rice-card.webp"
+        "imageUrl": "/assets/images/hero/hero-paneer-fried-rice-card.webp"
       }
     ]
   },
@@ -1799,7 +1799,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 219,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-egg-noodles-card.webp"
+        "imageUrl": "/assets/images/hero/hero-egg-schezwan-noodles-card.webp"
       },
       {
         "id": "g-dish-209-chicken-noodles",
@@ -1815,7 +1815,7 @@ export const sampleMenuGround = [
         "description": "",
         "price": 229,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-chicken-noodles-card.webp"
+        "imageUrl": "/assets/images/hero/hero-chicken-schezwan-noodles-card.webp"
       }
     ]
   },
@@ -2569,7 +2569,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 399,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-mutton-seekh-card.webp"
+        "imageUrl": "/assets/images/hero/hero-mutton-seekh-kabab-special-card.webp"
       },
       {
         "id": "t-dish-78-chilli-potato-chinese",
@@ -2633,7 +2633,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 399,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-butter-chicken-card.webp"
+        "imageUrl": "/assets/images/hero/hero-butter-chicken-bilder-card.webp"
       }
     ]
   },
@@ -2924,7 +2924,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 169,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-egg-chilli-card.webp"
+        "imageUrl": "/assets/images/hero/hero-egg-pepper-dry-card.webp"
       },
       {
         "id": "t-dish-118-chicken-kabab",
@@ -3115,7 +3115,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 319,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-paneer-biryani-card.webp"
+        "imageUrl": "/assets/images/hero/hero-paneer-kaju-biryani-card.webp"
       },
       {
         "id": "t-dish-141-mushroom-kaju-biryani",
@@ -3123,7 +3123,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 319,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-mushroom-biryani-card.webp"
+        "imageUrl": "/assets/images/hero/hero-mushroom-kaju-biryani-card.webp"
       }
     ]
   },
@@ -3146,7 +3146,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 349,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-mutton-biryani-card.webp"
+        "imageUrl": "/assets/images/hero/hero-royal-mutton-biryani-card.webp"
       },
       {
         "id": "t-dish-144-fish-biryani",
@@ -3281,7 +3281,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 269,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-paneer-butter-masala-card.webp"
+        "imageUrl": "/assets/images/hero/hero-paneer-butter-masala-special-card.webp"
       },
       {
         "id": "t-dish-160-dal-kolhapuri",
@@ -3297,7 +3297,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 219,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-dal-card.webp"
+        "imageUrl": "/assets/images/hero/hero-dal-tadka-card.webp"
       },
       {
         "id": "t-dish-162-palak-paneer",
@@ -3472,7 +3472,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 339,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-chicken-tikka-masala-card.webp"
+        "imageUrl": "/assets/images/hero/hero-chicken-tikka-masala-curry-card.webp"
       },
       {
         "id": "t-dish-183-chicken-methi-masala",
@@ -3646,7 +3646,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 199,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-veg-schezwan-rice-card.webp"
+        "imageUrl": "/assets/images/hero/hero-veg-triple-schezwan-rice-card.webp"
       },
       {
         "id": "t-dish-203-paneer-fried-rice",
@@ -3654,7 +3654,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 209,
         "type": "veg",
-        "imageUrl": "/assets/images/hero/hero-veg-fried-rice-card.webp"
+        "imageUrl": "/assets/images/hero/hero-paneer-fried-rice-card.webp"
       }
     ]
   },
@@ -3701,7 +3701,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 239,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-egg-noodles-card.webp"
+        "imageUrl": "/assets/images/hero/hero-egg-schezwan-noodles-card.webp"
       },
       {
         "id": "t-dish-209-chicken-noodles",
@@ -3717,7 +3717,7 @@ export const sampleMenuTop = [
         "description": "",
         "price": 249,
         "type": "nonveg",
-        "imageUrl": "/assets/images/hero/hero-chicken-noodles-card.webp"
+        "imageUrl": "/assets/images/hero/hero-chicken-schezwan-noodles-card.webp"
       }
     ]
   },
