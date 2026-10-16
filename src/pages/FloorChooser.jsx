@@ -122,11 +122,12 @@ export function FloorChooser() {
                 Ground Floor
               </span>
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                <span style={{ fontSize: "12px", color: "var(--veg-green)", fontWeight: 600 }}>
-                  100% Pure Veg
+                <span style={{ fontSize: "12px", color: "var(--muted)", fontWeight: 500 }}>
+                  Main Dining
                 </span>
                 <div style={{ display: "inline-flex", gap: "4px", alignItems: "center" }}>
                   <span className="type-dot veg" style={{ width: "6px", height: "6px" }} />
+                  <span className="type-dot nonveg" style={{ width: "6px", height: "6px" }} />
                 </div>
               </div>
             </div>
